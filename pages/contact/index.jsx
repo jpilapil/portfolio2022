@@ -3,7 +3,7 @@ import styles from "./Contact.module.scss";
 const ContactForm = () => {
   return (
     <p className={`${styles.formText} is-size-4 my-6`}>
-      What's up Justin, my name is&nbsp;
+      What&apos;s up Justin, my name is&nbsp;
       <input
         type="text"
         className={styles.contactInput}
@@ -11,15 +11,7 @@ const ContactForm = () => {
         aria-describedby="inputName"
         placeholder="your name"
       />{" "}
-      and I can be reached at&nbsp;
-      <input
-        type="email"
-        className={styles.contactInput}
-        id="input-email"
-        aria-describedby="emailHelp"
-        placeholder="your email/phone"
-      />
-      . I'm trying to contact you because&nbsp;
+      and I am trying to contact you because&nbsp;
       <input
         type="text"
         className={styles.contactInput}
@@ -27,7 +19,15 @@ const ContactForm = () => {
         aria-describedby="inputText"
         placeholder="your message"
       />
-      .
+      . I can be reached at&nbsp;
+      <input
+        type="email"
+        className={styles.contactInput}
+        id="input-email"
+        aria-describedby="emailHelp"
+        placeholder="your email/phone"
+      />
+      , I am looking forward to chatting with you.
     </p>
   );
 };
@@ -40,8 +40,8 @@ export default function Contact() {
       <div className="column is-half is-offset-one-half has-text-left">
         <h1 className={styles.header}>Contact</h1>
         <p className="mt-6">
-          Want to chat? fill in the blanks below. If you're old fashioned, you
-          can&nbsp;
+          Want to chat? fill in the blanks below. If you&apos;re old fashioned,
+          you can&nbsp;
           <a
             href="mailto:justin.pilapil@yahoo.com"
             className={styles.clickable}
