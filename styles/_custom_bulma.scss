@@ -1,0 +1,57 @@
+@import "./colors";
+// Override default bulma scss variables with our own
+
+// Colors
+// #000 is too sharp only use for shadows and gradients, use $background for a grey/black
+$black: $black;
+// $background: #1a1b1f;
+$background: $background;
+$grey: #808080;
+$primary: $black;
+
+// Typography
+$text: $black;
+
+// Box
+$box-background-color: hsla(0, 0%, 8%, 0.721);
+// $box-background-color: $background;
+$box-shadow: 0 0.5em 1em -0.125em rgba($black, 1);
+$box-radius: 0.25rem;
+// $box-shadow: 0 0 0 1px rgba($black, 0.3);
+
+// Input
+$input-color: $white;
+
+// Nav
+$navbar-item-hover-color: $grey;
+$navbar-item-hover-background-color: $black;
+$navbar-burger-color: $black;
+$navbar-background-color: $black;
+$navbar-dropdown-item-hover-background-color: $background;
+$navbar-dropdown-background-color: $background;
+$navbar-dropdown-item-hover-color: $grey;
+
+// Spacing
+$spacing-values: (
+   "0": 0,
+   "1": 0.25rem,
+   "2": 0.5rem,
+   "3": 0.75rem,
+   "4": 1rem,
+   "5": 1.5rem,
+   "6": 3rem,
+   // custom
+   "7": 5rem,
+   "auto": auto,
+);
+
+$section-padding-medium: 5rem 4.5rem;
+
+// $table-cell-border-color: $background;
+
+// To successfully override the default bulma scss variables,
+// you must use the @import directive.
+@import "../node_modules/bulma/sass/utilities/mixins.sass";
+@import "../node_modules/bulma/sass/utilities/functions.sass";
+@import "../node_modules/bulma/sass/utilities/initial-variables.sass";
+@import "../node_modules/bulma/bulma.sass";
