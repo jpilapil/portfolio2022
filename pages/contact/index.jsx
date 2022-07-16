@@ -1,4 +1,4 @@
-import { useState, useCallback } from "react";
+import { useState } from "react";
 import styles from "./Contact.module.scss";
 
 const ContactForm = () => {
