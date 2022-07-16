@@ -21,6 +21,11 @@
    // overflow: hidden;
 }
 
-.navBtn:hover {
-   color: $taupe;
+.navBtn{
+   color: $green;
+   font-weight: bold;
+&:hover {
+      color: $taupe;
+   }
 }
+
