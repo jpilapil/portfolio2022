@@ -54,4 +54,7 @@
       background-color: $taupe;
       color: $black;
    }
+   &:focus {
+      color: $white;
+   }
 }

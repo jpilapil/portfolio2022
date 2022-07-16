@@ -1,29 +1,37 @@
-import { useState } from "react";
+import { useState, useCallback } from "react";
 import styles from "./Contact.module.scss";
 
 const ContactForm = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    message: "",
-    contact: "",
-  });
+  const [name, setName] = useState("");
+  const [message, setMessage] = useState("");
+  const [contact, setContact] = useState("");
 
-  const handleNameChange = (e) => {
-    setFormData({ ...formData, name: e.target.value });
+  let formData = {
+    name,
+    message,
+    contact,
   };
 
-  const handleMessageChange = (e) => {
-    setFormData({ ...formData, message: e.target.value });
-  };
-
-  const handleContactChange = (e) => {
-    setFormData({ ...formData, contact: e.target.value });
-  };
-
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log(formData);
+    // console.log(formData);
+    await fetch("/api/contact", {
+      method: "post",
+      body: JSON.stringify(formData),
+    });
   };
+
+  // const handleNameChange = (e) => {
+  //   setFormData({ ...formData, name: e.target.value });
+  // };
+
+  // const handleMessageChange = (e) => {
+  //   setFormData({ ...formData, message: e.target.value });
+  // };
+
+  // const handleContactChange = (e) => {
+  //   setFormData({ ...formData, contact: e.target.value });
+  // };
 
   return (
     <>
@@ -36,7 +44,9 @@ const ContactForm = () => {
           aria-describedby="inputName"
           placeholder="your name"
           value={formData.name}
-          onChange={handleNameChange}
+          onChange={(e) => {
+            setName(e.target.value);
+          }}
         />{" "}
         and I am trying to contact you because&nbsp;
         <input
@@ -46,7 +56,9 @@ const ContactForm = () => {
           aria-describedby="inputText"
           placeholder="your message"
           value={formData.message}
-          onChange={handleMessageChange}
+          onChange={(e) => {
+            setMessage(e.target.value);
+          }}
         />
         . I can be reached at&nbsp;
         <input
@@ -56,11 +68,18 @@ const ContactForm = () => {
           aria-describedby="inputEmail"
           placeholder="your email/phone"
           value={formData.contact}
-          onChange={handleContactChange}
+          onChange={(e) => {
+            setContact(e.target.value);
+          }}
         />
         , I am looking forward to chatting with you.
       </p>
-      <button className={`${styles.send} button`} onClick={handleSubmit}>
+      <button
+        className={`${styles.send} button`}
+        onClick={(e) => {
+          handleSubmit(e);
+        }}
+      >
         SEND IT
       </button>
     </>
