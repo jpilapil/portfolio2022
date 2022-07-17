@@ -2,14 +2,14 @@ import styles from "./About.module.scss";
 
 const Bio = () => {
   return (
-    <div className="column is-half is-offset-one-half has-text-left">
-      <h1 className={styles.header}>ABOUT</h1>
+    <div className="column has-text-left">
+      <h1 className={styles.header}>About me</h1>
       <p className="mt-6">
-        Hey, my name is Justin, a Las Vegas based software developer with strong
-        design aesthetic and principles. I have over 3 years of professional
-        experience and consider myself a problem solver with creative visual
-        solutions.
+        Hey, my name is Justin, a software developer with strong design
+        aesthetic and principles. I have over 3 years of professional experience
+        and consider myself a problem solver with creative visual solutions.
       </p>
+      <br />
       <p>
         I enjoy exploring possibilities and am constantly searching for
         challenges to improve my skills. I belive that my job as a developer is
@@ -17,20 +17,38 @@ const Bio = () => {
         more about closing the gap between the user and their goals while
         combining business goals with creative solutions.
       </p>
-      <p>
-        View my GitHub to check out the different public projects I might be
-        working on, or contact me here if you would like to learn more about me.
-      </p>
+      <br />
+      <p>Here are a few technologies I've been working with recently:</p>
+      <br />
+      <table className="table is-fullwidth">
+        <tbody>
+          <tr>
+            <td className={styles.tech}>JavaScript (ES6+)</td>
+            <td className={styles.tech}>Next.js</td>
+          </tr>
+          <tr>
+            <td className={styles.tech}>React</td>
+            <td className={styles.tech}>Solidity</td>
+          </tr>
+          <tr>
+            <td className={styles.tech}>Node.js</td>
+            <td className={styles.tech}>Bulma</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   );
 };
+
+const Mugshot = () => {
+  return <div className={`${styles.temp} column has-text-right`}></div>;
+};
+
 export default function About() {
   return (
-    <div
-      id="about"
-      className={`${styles.topSpace} hero is-fullheight columns is-justify-content-center is-align-items-center`}
-    >
+    <section id="about" className="columns">
       <Bio />
-    </div>
+      <Mugshot />
+    </section>
   );
 }
