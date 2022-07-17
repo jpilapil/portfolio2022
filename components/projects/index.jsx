@@ -1,32 +1,7 @@
 import { useState } from "react";
-import Head from "next/head";
-import Image from "next/image";
-import styles from "./Home.module.scss";
+import styles from "./Projects.module.scss";
 
-const HeroName = () => {
-  return (
-    <div className="column is-6 has-text-centered m-auto">
-      <h1
-        data-aos="fade-right"
-        data-aos-duration="1000"
-        data-aos-easing="ease-in-sine"
-        className={styles.name}
-      >
-        JUSTIN
-      </h1>
-      <h1
-        data-aos="fade-left"
-        data-aos-duration="1000"
-        data-aos-easing="ease-in-sine"
-        className={styles.name}
-      >
-        PILAPIL
-      </h1>
-    </div>
-  );
-};
-
-const Projects = () => {
+export default function Projects() {
   const projects = ["test", "test", "test"];
   const [activeStep, setActiveStep] = useState(0);
   const maxSteps = projects.length;
@@ -39,7 +14,7 @@ const Projects = () => {
     setActiveStep((prevActiveStep) => prevActiveStep - 1);
   };
   return (
-    <div className="column is-6 ">
+    <div id="projects" className="column is-6 ">
       <h1 className={`${styles.header} has-text-centered-mobile`}>PROJECTS</h1>
       <div className="columns">
         <div className="column is-6 has-text-centered-mobile">
@@ -65,19 +40,6 @@ const Projects = () => {
             NXT
           </button>
         </div>
-      </div>
-    </div>
-  );
-};
-
-export default function Home() {
-  return (
-    <div
-      className={`${styles.topSpace} hero is-fullheight is-justify-content-center`}
-    >
-      <div className=" container columns is-desktop">
-        <HeroName />
-        <Projects />
       </div>
     </div>
   );

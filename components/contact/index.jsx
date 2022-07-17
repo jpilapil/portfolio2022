@@ -89,6 +89,7 @@ const ContactForm = () => {
 export default function Contact() {
   return (
     <div
+      id="contact"
       className={`${styles.topSpace} hero is-fullheight columns is-justify-content-center is-align-items-center`}
     >
       <div className="column is-half is-offset-one-half has-text-left">

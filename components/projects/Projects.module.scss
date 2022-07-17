@@ -4,22 +4,22 @@
 // take into account for the extra space of nav bar up top
 .topSpace {
    @media only screen and (min-width: 768px) {
-         padding-bottom: 100px;
-      }
+      padding-bottom: 100px;
+   }
 
    // also add padding to left and right side of page
    padding: 0 1rem;
-   
+
 }
 
 .name {
    font-size: 8rem;
    font-style: italic;
    line-height: 0.075;
-    
-    @media only screen and (max-width: 768px) {
-         font-size: 5rem;
-      }
+
+   @media only screen and (max-width: 768px) {
+      font-size: 5rem;
+   }
 }
 
 .header {
@@ -30,8 +30,8 @@
 
 .desc {
    @media only screen and (max-width: 768px) {
-         margin-left: 1.5rem;
-      }
+      margin-left: 1.5rem;
+   }
 }
 
 .title {
@@ -44,8 +44,9 @@
    border: none;
    background-color: transparent;
    color: $green;
+
    &:hover {
-   color: $taupe;
+      color: $light-blue;
    }
 }
 
@@ -60,7 +61,7 @@
    background-color: $secondary;
 
    @media only screen and (max-width: 768px) {
-         width: 80%;
-            height: 1400px;
-      }
+      width: 80%;
+      height: 1400px;
+   }
 }

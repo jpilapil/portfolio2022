@@ -1,12 +1,15 @@
 @use "sass:color";
 
-$background: #f5f5f5; // off-white
-$black: #141414; // off-black
-$grey: #a1a1a1; // grey
-$green: #26453E; //aime green
-$taupe: #DFD1AC;
-$brown: #935530;
-// $grey: $taupe;
-$white: $background;
-$primary: $black;
+$background: #242933; 
+$black: #141414; 
+$grey: #4C566A;
+$light-blue: #ABB9CF; 
+$ice: #88C0D0; 
+$white: #ECEFF4; 
+$green: #A3BE8C; 
+$red: #BF616A;
+$transparent-ice: rgba(136, 192, 208, 0.1);
 $secondary: $grey;
+// $green: #26453E; //aime green
+// $taupe: #DFD1AC;
+// $brown: #935530;

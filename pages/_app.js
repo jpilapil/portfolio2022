@@ -18,10 +18,8 @@ function MyApp({ Component, pageProps }) {
           content="width=device-width, initial-scale=1, minimum-scale=1"
         />
       </Head>
-      <div id="site-border">
-        <Navigation />
-        <Component {...pageProps} />
-      </div>
+      <Navigation />
+      <Component {...pageProps} />
     </>
   );
 }

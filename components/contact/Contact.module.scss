@@ -28,7 +28,7 @@
 }
 
 .clickable:hover {
-   color: $taupe;
+   color: $light-blue;
    text-decoration: none;
 }
 
@@ -51,7 +51,7 @@
    color: $white;
    padding: 2rem 3rem;
    &:hover {
-      background-color: $taupe;
+      background-color: $light-blue;
       color: $black;
    }
    &:focus {
