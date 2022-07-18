@@ -1,13 +1,22 @@
 import styles from "./About.module.scss";
 
 const Bio = () => {
+  const skills = [
+    "JavaScript (ES6+)",
+    "Next.js",
+    "React",
+    "Solidiity",
+    "Node.js",
+    "Bulma",
+  ];
+
   return (
     <div className="column has-text-left">
-      <h1 className={styles.header}>About me</h1>
+      <h1 className={styles.header}>About Me</h1>
       <p className="mt-6">
-        Hey, my name is Justin, a software developer with strong design
-        aesthetic and principles. I have over 3 years of professional experience
-        and consider myself a problem solver with creative visual solutions.
+        Hey, my name is Justin, a software developer with over 3 years of
+        professional experience. I consider myself a problem solver with
+        creative visual solutions.
       </p>
       <br />
       <p>
@@ -20,22 +29,9 @@ const Bio = () => {
       <br />
       <p>Here are a few technologies I've been working with recently:</p>
       <br />
-      <table className="table is-fullwidth">
-        <tbody>
-          <tr>
-            <td className={styles.tech}>JavaScript (ES6+)</td>
-            <td className={styles.tech}>Next.js</td>
-          </tr>
-          <tr>
-            <td className={styles.tech}>React</td>
-            <td className={styles.tech}>Solidity</td>
-          </tr>
-          <tr>
-            <td className={styles.tech}>Node.js</td>
-            <td className={styles.tech}>Bulma</td>
-          </tr>
-        </tbody>
-      </table>
+      <ul className={styles.skills}>
+        {skills && skills.map((skill) => <li key={skill}>{skill}</li>)}
+      </ul>
     </div>
   );
 };
@@ -46,7 +42,7 @@ const Mugshot = () => {
 
 export default function About() {
   return (
-    <section id="about" className="columns">
+    <section id="about" className="section columns is-medium">
       <Bio />
       <Mugshot />
     </section>

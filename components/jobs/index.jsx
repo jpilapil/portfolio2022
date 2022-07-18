@@ -1,21 +1,28 @@
+import { useState } from "react";
 import { v4 as getUuid } from "uuid";
 import styles from "./Jobs.module.scss";
 
 export default function Jobs() {
+  const [showJobInfo, setShowJobInfo] = useState(null);
+
+  const toggleJobInfo = (i) => {
+    setShowJobInfo(i);
+  };
+
   const jobs = [
     {
       id: getUuid(),
       title: "Partner / Developer",
       company: "Luna Luxe Crystals",
       date: "February 2022 - Present",
-      location: "Remote",
+      description: ["test1", "test2", "test3"],
     },
     {
       id: getUuid(),
       title: "Software Developer",
       company: "Concierge Software Design",
       date: "April 2021 - Present",
-      location: "Las Vegas, NV",
+      description: ["test1", "test2", "test3"],
     },
 
     {
@@ -23,35 +30,60 @@ export default function Jobs() {
       title: "Front End Engineer",
       company: "IONnovate",
       date: "September 2020 - February 2021",
-      location: "Remote",
+      description: ["test1", "test2", "test3"],
     },
     {
       id: getUuid(),
       title: "Web Developer (Contract)",
       company: "Refined Living",
       date: "January 2019 - December 2020",
-      location: "Las Vegas, NV",
+      description: ["test1", "test2", "test3"],
     },
   ];
+
   return (
-    <div id="jobs" className="column is-half is-offset-one-half has-text-left">
-      <h1 className={styles.header}>EXPERIENCE</h1>
-      <table className="table is-fullwidth mt-6">
-        <tbody>
-          {jobs.map((job) => {
+    <section id="jobs" className="section is-medium">
+      <h1 className={`${styles.header} has-text-right`}>Previous Roles</h1>
+      <div className="columns">
+        <div className="column is-4">
+          {jobs.map((job, i) => (
+            <button
+              className={`${styles.companySelect}`}
+              onClick={() => toggleJobInfo(i)}
+              key={i}
+            >
+              {job.company}
+            </button>
+          ))}
+        </div>
+        <div className="column has-text-left">
+          {jobs.map((job, i) => {
             return (
-              <tr key={job.id}>
-                <td className={styles.date}>{job.date}</td>
-                <td>
-                  {job.title} at&nbsp;
-                  <span className={styles.company}>{job.company}</span>
-                </td>
-                <td>{job.location}</td>
-              </tr>
+              <div
+                key={i}
+                hidden={i !== showJobInfo}
+                className={`${styles.jobInfo}`}
+                // className={`${styles.jobInfo} ${
+                //   showJobInfo === i ? "is-visible" : "is-hidden"
+                // }`}
+              >
+                <h3>
+                  {job.title}
+                  <span className={styles.company}>
+                    &nbsp;@&nbsp;{job.company}
+                  </span>
+                </h3>
+                <p className={styles.date}>{job.date}</p>
+                <ul className={styles.jobDesc}>
+                  {job.description.map((bullet, i) => (
+                    <li key={i}>{bullet}</li>
+                  ))}
+                </ul>
+              </div>
             );
           })}
-        </tbody>
-      </table>
-    </div>
+        </div>
+      </div>
+    </section>
   );
 }
