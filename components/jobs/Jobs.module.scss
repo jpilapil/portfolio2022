@@ -32,36 +32,33 @@
 }
 
 .companySelect { 
-         font-family: $fontFamilySecondary;
-         border: none;
-         background-color: $background;
-         color: $light-blue;
-         font-size: .875rem;
-         padding: .5rem 4rem .5rem .5rem;
-         border-left: 3px solid $dark-grey;
-         width: 100%;
-         text-align: left;
-         
-         &:hover {
-            background-color: $transparent-ice;
-            color: $ice;
-            cursor: pointer;
-            
-         }
-   
-         &:focus{
-            color: $ice;
-            border-left: 3px solid $ice;
-            border-radius: 1px;
+   font-family: $fontFamilySecondary;
+   border: none;
+   background-color: $background;
+   color: $light-blue;
+   font-size: .875rem;
+   padding: .5rem 4rem .5rem .5rem;
+   border-left: 3px solid $dark-grey;
+   width: 100%;
+   text-align: left;
 
-            &::after {
-               border-left: none;
-            }
-         }
+   &:hover {
+      background-color: $transparent-ice;
+      color: $ice;
+      cursor: pointer;
+      
+   }
 
-      }
+   &::after {
+      border-left: none;
+   }
+}
 
-
+.selected {
+   color: $ice;
+      border-left: 3px solid $ice;
+      border-radius: 1px;
+}
 
 .company {
    color: $ice;

@@ -41,7 +41,9 @@ export default function Jobs() {
         <div className="column is-4">
           {jobs.map((job, i) => (
             <button
-              className={`${styles.companySelect}`}
+              className={`${styles.companySelect} ${
+                i === showJobInfo ? styles.selected : ""
+              }`}
               onClick={() => toggleJobInfo(i)}
               key={i}
             >
