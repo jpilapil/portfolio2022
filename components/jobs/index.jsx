@@ -56,9 +56,6 @@ export default function Jobs() {
                 key={i}
                 hidden={i !== showJobInfo}
                 className={`${styles.jobInfo}`}
-                // className={`${styles.jobInfo} ${
-                //   showJobInfo === i ? "is-visible" : "is-hidden"
-                // }`}
               >
                 <h3>
                   {job.title}
