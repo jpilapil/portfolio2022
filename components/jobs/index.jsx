@@ -3,20 +3,13 @@ import { v4 as getUuid } from "uuid";
 import styles from "./Jobs.module.scss";
 
 export default function Jobs() {
-  const [showJobInfo, setShowJobInfo] = useState(null);
+  const [showJobInfo, setShowJobInfo] = useState(0);
 
   const toggleJobInfo = (i) => {
     setShowJobInfo(i);
   };
 
   const jobs = [
-    {
-      id: getUuid(),
-      title: "Partner / Developer",
-      company: "Luna Luxe Crystals",
-      date: "February 2022 - Present",
-      description: ["test1", "test2", "test3"],
-    },
     {
       id: getUuid(),
       title: "Software Developer",
