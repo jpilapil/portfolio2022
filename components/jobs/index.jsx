@@ -3,6 +3,8 @@ import { v4 as getUuid } from "uuid";
 import styles from "./Jobs.module.scss";
 
 export default function Jobs() {
+  // set initial state to first index of jobs array
+  // this will be used to display the first job, dummy
   const [showJobInfo, setShowJobInfo] = useState(0);
 
   const toggleJobInfo = (i) => {
