@@ -146,16 +146,8 @@
       }
    }
    
-   .project-overline {
-      margin: 10px 0;
-      color: var(--green);
-      font-family: var(--font-mono);
-      font-size: var(--fz-xs);
-      font-weight: 400;
-   }
-   
    .title {
-      color: var(--lightest-slate);
+      color: $ice;
       font-size: clamp(24px, 5vw, 28px);
    
       @media (min-width: 768px) {
@@ -163,7 +155,7 @@
       }
    
       @media (max-width: 768px) {
-         color: var(--white);
+         color: $ice;
    
          a {
             position: static;
@@ -201,12 +193,6 @@
             box-shadow: none;
          }
       }
-   
-      
-      strong {
-         color: var(--white);
-         font-weight: normal;
-      }
    }
    
    .tech {
@@ -223,9 +209,6 @@
    
       li {
          margin: 0 20px 5px 0;
-         color: var(--light-slate);
-         font-family: var(--font-mono);
-         font-size: var(--fz-xs);
          white-space: nowrap;
       }
    

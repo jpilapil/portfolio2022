@@ -38,7 +38,7 @@
    color: $light-blue;
    font-size: .875rem;
    padding: .5rem 4rem .5rem .5rem;
-   border-left: 3px solid $dark-grey;
+   border-left: 2px solid $dark-grey;
    width: 100%;
    text-align: left;
 
@@ -57,7 +57,7 @@
 .selected {
    color: $ice;
    border-left: 4px solid $ice;
-   border-radius: 1px;
+   // border-radius: 1px;
 }
 
 .company {

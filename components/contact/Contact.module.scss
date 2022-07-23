@@ -33,24 +33,23 @@
 }
 
 .wrap{
-   // width: 100%;
+   // padding: 25px;
+   // box-shadow: 10px 10px 5px -5px rgba(0, 0, 0, 0.75);
 } 
 
 .formText {
-   & p {
-      width: 100% !important;
-   }
    line-height: 3rem;
+   font-weight: bold;
 }
 
 .clickable {
-   color: $green;
-   text-decoration: underline;
+   color: $ice;
+   
 }
 
 .clickable:hover {
    color: $light-blue;
-   text-decoration: none;
+   text-decoration: underline;
 }
 
 .contactInput {
@@ -58,24 +57,35 @@
    max-width: 99.99% !important;
    transition: width 0.25s;
    border: none;
-   border-bottom: 1px solid $green;
+   border-bottom: 1px solid $dark-grey;
    background-color: $background;
    text-align: center;
    font-size: 1.5rem;
-   color: $green;
+   color: $light-blue;
+
+   &:focus {
+      border-bottom: 1px solid $light-blue;
+   }
 }
 
 .send {
-   border: none;
-   border-radius: 0;
-   background-color: $green;
-   color: $white;
-   padding: 2rem 3rem;
+   font-family: $fontFamilySecondary;
+   margin-top: 1rem;
+   padding: 1.5rem 2rem;
+   border: 1px solid $ice;
+   background-color: $background;
+   color: $ice;
+
    &:hover {
-      background-color: $light-blue;
-      color: $black;
+      background-color: $transparent-ice;
+      border-color: $ice;
+      color: $ice;
    }
+
    &:focus {
-      color: $white;
+      background-color: $transparent-ice;
+      border-color: $ice;
+      color: $ice;
    }
 }
+
