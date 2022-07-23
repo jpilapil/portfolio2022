@@ -88,12 +88,9 @@ const ContactForm = () => {
 
 export default function Contact() {
   return (
-    <div
-      id="contact"
-      className={`${styles.topSpace} hero is-fullheight columns is-justify-content-center is-align-items-center`}
-    >
-      <div className="column is-half is-offset-one-half has-text-left">
-        <h1 className={styles.header}>Contact</h1>
+    <section id="contact" className="section is-medium">
+      <h1 className={`${styles.header} has-text-left`}>Contact Me</h1>
+      <div className={`${styles.wrap}`}>
         <p className="mt-6">
           Want to chat? fill in the blanks below. If you&apos;re old fashioned,
           you can&nbsp;
@@ -107,6 +104,6 @@ export default function Contact() {
         </p>
         <ContactForm />
       </div>
-    </div>
+    </section>
   );
 }

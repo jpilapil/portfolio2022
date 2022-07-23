@@ -5,28 +5,28 @@
    font-size: clamp(1.625rem, 5vw, 2rem);
    margin-bottom: 3rem;
 
-   &::after {
+   &::before {
       color: $ice;
       font-size: 1rem;
       font-family: $fontFamilySecondary;
       counter-increment: section 2;
       content: ".0" counter(section);
       font-weight: 400;
-      padding-left: .5rem;
+      padding-right: .5rem;
    }
 
-   &::before {
+   &::after {
       content: "";
       display: inline-block;
       position: relative;
       top: -.625rem;
-      margin-right: 1.25rem;
+      margin-left: 1.25rem;
       width: 12rem;
       height: 1px;
       background-color: $dark-grey;
 
       @media only screen and (max-width: 768px) {
-         width: 6.5rem;
+         width: 5.5rem;
       }
    }
 }
@@ -56,8 +56,8 @@
 
 .selected {
    color: $ice;
-      border-left: 3px solid $ice;
-      border-radius: 1px;
+   border-left: 4px solid $ice;
+   border-radius: 1px;
 }
 
 .company {

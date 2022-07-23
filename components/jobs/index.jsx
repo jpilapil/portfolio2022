@@ -38,7 +38,7 @@ export default function Jobs() {
 
   return (
     <section id="jobs" className="section is-medium">
-      <h1 className={`${styles.header} has-text-right`}>Previous Roles</h1>
+      <h1 className={`${styles.header} has-text-left`}>Previous Roles</h1>
       <div className="columns">
         <div className="column is-4">
           {jobs.map((job, i) => (

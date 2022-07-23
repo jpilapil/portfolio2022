@@ -1,24 +1,45 @@
 @import "../../styles/colors.scss";
+@import "../../styles/fonts.scss";
 
-// use this to center the main div
-// take into account for the extra space of nav bar up top
-.topSpace {
-   @media only screen and (min-width: 768px) {
-      padding-bottom: 100px;
-   }
-
-   // also add padding to left and right side of page
-   padding: 0 1rem;
-
-}
 
 .header {
-   font-size: 2.5rem;
-   font-style: italic;
-   line-height: 0.075;
+   font-size: clamp(1.625rem, 5vw, 2rem);
+   margin-bottom: 3rem;
+
+   &::before {
+      color: $ice;
+      font-size: 1rem;
+      font-family: $fontFamilySecondary;
+      counter-increment: section 4;
+      content: ".0" counter(section);
+      font-weight: 400;
+      padding-right: .5rem;
+   }
+
+   &::after {
+      content: "";
+      display: inline-block;
+      position: relative;
+      top: -.625rem;
+      margin-left: 1.25rem;
+      width: 12rem;
+      height: 1px;
+      background-color: $dark-grey;
+
+      @media only screen and (max-width: 768px) {
+         width: 6.5rem;
+      }
+   }
 }
 
+.wrap{
+   // width: 100%;
+} 
+
 .formText {
+   & p {
+      width: 100% !important;
+   }
    line-height: 3rem;
 }
 

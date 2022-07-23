@@ -33,16 +33,16 @@ export default function Projects() {
               alt="project"
             />
           </div>
-          <div className={styles.projectContent}>
-            <h3 className={styles.projectTitle}>{project.projectName}</h3>
-            <div className={styles.projectDesc}>
+          <div className={styles.content}>
+            <h3 className={styles.title}>{project.projectName}</h3>
+            <div className={styles.desc}>
               <p>{project.desc}</p>
             </div>
-            <div className={styles.projectTech}>
+            <ul className={styles.tech}>
               {project.tech.map((tech, i) => (
-                <p key={i}>{tech}</p>
+                <li key={i}>{tech}</li>
               ))}
-            </div>
+            </ul>
           </div>
         </div>
       ))}
