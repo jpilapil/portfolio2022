@@ -32,7 +32,10 @@ body {
    // @media only screen and (max-width: 768px) {
    //       font-size: 1.125rem;
    //    }
-   // overflow-x: hidden;=
+   // overflow-x: hidden;
+   
+   // for nav increment
+   counter-reset: item;
 }
 
 h1,

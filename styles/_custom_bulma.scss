@@ -13,16 +13,10 @@ $text: $black;
 // Tables
 $table-color: $white;
 
-// Box
-// $box-background-color: hsla(0, 0%, 8%, 0.721);
-// // $box-background-color: $background;
-// $box-shadow: 0 0.5em 1em -0.125em rgba($black, 1);
-// $box-radius: 0.25rem;
-// // $box-shadow: 0 0 0 1px rgba($black, 0.3);
-
-// // Input
-// $input-color: $white;
-
+// Navbar
+$navbar-background-color: $background;
+$navbar-burger-color: $ice;
+$navbar-tab-active-color: $ice;
 
 // Spacing
 $spacing-values: (
@@ -41,10 +35,6 @@ $spacing-values: (
 // border radius (default 6px)
 $control-radius: 4px;
 
-
-// $section-padding-medium: 5rem 4.5rem;
-
-// $table-cell-border-color: $background;
 
 // To successfully override the default bulma scss variables,
 // you must use the @import directive.

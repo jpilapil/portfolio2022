@@ -36,7 +36,7 @@ export default function Jobs() {
   ];
 
   return (
-    <section id="jobs" className="section is-medium">
+    <section id="experience" className="section is-medium">
       <h1 className={`${styles.header} has-text-left`}>Previous Roles</h1>
       <div className="columns">
         <div className="column is-4">
