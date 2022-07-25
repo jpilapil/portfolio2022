@@ -28,10 +28,10 @@ body {
    margin: 0;
    color: $white;
    background-color: $background;
-   font-size: clamp(1.25rem, 5vw, 1.125rem);
-   @media only screen and (max-width: 768px) {
-         font-size: 1.125rem;
-      }
+   font-size: clamp(1.125rem, 5vw, 1.25rem);
+   // @media only screen and (max-width: 768px) {
+   //       font-size: 1.125rem;
+   //    }
    // overflow-x: hidden;=
 }
 

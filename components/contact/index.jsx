@@ -24,8 +24,8 @@ const ContactForm = () => {
   return (
     <>
       <div className={`${styles.wrap}`}>
-        <p className={`${styles.formText} is-size-4 my-6`}>
-          "What&apos;s up Justin, my name is&nbsp;
+        <p className={`${styles.formText}`}>
+          What&apos;s up Justin, my name is&nbsp;
           <input
             type="text"
             className={styles.contactInput}
@@ -61,7 +61,7 @@ const ContactForm = () => {
               setContact(e.target.value);
             }}
           />
-          , I am looking forward to chatting with you."
+          , I am looking forward to chatting with you.
         </p>
       </div>
       <button

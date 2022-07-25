@@ -38,9 +38,33 @@
 } 
 
 .formText {
+   color: $light-blue;
    line-height: 3rem;
    font-weight: bold;
+   font-size: clamp(1rem, 5vw, 1.5rem);
+   padding: 5rem;
+   @media only screen and (max-width: 768px) {
+         padding: 0;
+      }
+
+
+   &::before {
+      content: "“";
+      font-family: $fontFamilyQuotes;
+      font-size: clamp(3rem, 5vw, 4rem);
+      color: $grey;
+      padding: 1rem;
+   }
+
+   &::after {
+      content: "”";
+      font-family: $fontFamilyQuotes;
+      font-size: clamp(3rem, 5vw, 4rem);
+      color: $grey;
+      padding: 1rem;
+   }
 }
+
 
 .clickable {
    color: $ice;
@@ -70,7 +94,6 @@
 
 .send {
    font-family: $fontFamilySecondary;
-   margin-top: 1rem;
    padding: 1.5rem 2rem;
    border: 1px solid $ice;
    background-color: $background;
