@@ -58,7 +58,7 @@ export default function Navigation() {
         <div className="navbar-end">
           {sections.map((section, i) => (
             <div className="navbar-item" key={i}>
-              <Link href={`#${section}`}>
+              <Link href={`#${section.toLowerCase()}`}>
                 <a className={`${styles.navBtn} button nav-link`}>{section}</a>
               </Link>
             </div>

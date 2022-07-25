@@ -1,4 +1,5 @@
 import styles from "./Hero.module.scss";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -16,9 +17,11 @@ export default function Hero() {
           I&apos;m focused on building custom software solutions for clients at
           Concierge Software Design.
         </p>
-        <button className={`${styles.heroButton} button`}>
-          Get in contact
-        </button>
+        <Link href="#contact">
+          <button className={`${styles.heroButton} button`} href="#contact">
+            Get in contact
+          </button>
+        </Link>
       </div>
     </section>
   );
