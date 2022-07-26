@@ -39,8 +39,8 @@ export default function Projects() {
               <p>{project.desc}</p>
             </div>
             <ul className={styles.tech}>
-              {project.tech.map((tech, i) => (
-                <li key={i}>{tech}</li>
+              {project.tech.map((item, i) => (
+                <li key={i}>{item}</li>
               ))}
             </ul>
           </div>
