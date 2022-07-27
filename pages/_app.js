@@ -4,6 +4,7 @@ import "./app.scss";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Navigation from "../components/navigation/Navigation";
+import Socials from "../components/socials";
 
 function MyApp({ Component, pageProps }) {
   // control for fade in animation on components
@@ -20,6 +21,7 @@ function MyApp({ Component, pageProps }) {
       </Head>
       <Navigation />
       <Component {...pageProps} />
+      <Socials />
     </>
   );
 }

@@ -1,0 +1,44 @@
+@import "../../styles/colors.scss";
+
+.iconContainer {
+   // padding-left: 3rem;
+   width: 40px;
+   position: fixed;
+   bottom: 0;
+   left: 40px;
+   right: auto;
+   z-index: 10;
+
+   &:after {
+         content: '';
+         display: block;
+         width: 1px;
+         height: 90px;
+         margin: 0 auto;
+         left: 40px;
+         background-color: $light-blue;
+      }
+}
+
+.icons {
+   filter: invert(75%) sepia(4%) saturate(1223%) hue-rotate(178deg) brightness(98%) contrast(90%);
+
+   list-style: none;
+
+   &:last-of-type {
+         margin-bottom: 20px;
+      }
+   
+      a {
+         display: inline-block;
+         padding: 10px;
+   
+         &:hover,
+         &:focus {
+            transform: translateY(-3px);
+            
+            // closest i can find to $ice
+            filter: invert(76%) sepia(20%) saturate(500%) hue-rotate(147deg) brightness(90%) contrast(97%);
+         }
+      }
+}
