@@ -1,31 +1,40 @@
 @import "../../styles/colors.scss";
+@import "../../styles/fonts.scss";
 
 .nav {
    background-color: $background;
 
-   // display: absolute;
-   // top: 0;
-   // -webkit-transform: rotate(90deg);
-   // -ms-transform: rotate(90deg);
-   // transform: rotate(90deg);
-   // -webkit-transform-origin: top left;
-   // -ms-transform-origin: top left;
-   // transform-origin: top left;
-   // position: fixed;
-   // left: 100%;
-   // // padding-left: 20px;
-   // width: 100vh;
-   // -o-text-overflow: clip;
-   // text-overflow: clip;
-   // white-space: nowrap;
-   // overflow: hidden;
+   span {
+      color: $ice;
+   }
 }
 
+
+
 .navBtn{
-   color: $green;
-   font-weight: bold;
-&:hover {
-      color: $taupe;
+   font-size: .875rem;
+   color: $light-blue;
+   font-family: $fontFamilySecondary;
+   background-color: $background;
+   border: none;
+
+   &:hover {
+      color: $ice;
+   }
+
+   &:focus {
+      color: $ice;
+   }
+   
+  
+   &::before {
+      color: $ice;
+      
+      font-family: $fontFamilySecondary;
+      counter-increment: item;
+      content: "0" counter(item) ".";
+      font-weight: 400;
+      padding-right: .5rem;
    }
 }
 

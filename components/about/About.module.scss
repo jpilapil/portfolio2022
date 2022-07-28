@@ -1,0 +1,76 @@
+@import "../../styles/colors.scss";
+@import "../../styles/fonts.scss";
+
+.header {
+   // font-size: 2rem;
+   font-size: clamp(1.625rem, 5vw, 2rem);
+   
+   &::before {
+      color: $ice;
+      font-size: 1rem;
+      font-family: $fontFamilySecondary;
+      counter-increment: section 1;
+      content: "0" counter(section) ".";
+      font-weight: 400;
+      padding-right: .5rem;
+      }
+
+   &::after {
+      content: "";
+      display: inline-block;
+      position: relative;
+      top: -.625rem;
+      margin-left: 1.25rem;
+      width: 12rem;
+      height: 1px;
+      background-color: $dark-grey;
+
+      @media only screen and (max-width: 768px) {
+            width: 6.5rem;
+         }
+   }  
+}
+
+ul.skills {
+   color: $light-blue;
+   display: grid;
+   grid-template-columns: repeat(2, minmax(140px, 200px));
+   grid-gap: 0 10px;
+   padding: 0;
+   margin: 20px 0 0 0;
+   overflow: hidden;
+   list-style: none;
+
+   li {
+      position: relative;
+      margin-bottom: 10px;
+      padding-left: 20px;
+      font-family: $fontFamilySecondary;
+      font-size: .875rem;
+
+      &:before {
+         content: '▹';
+         position: inline-flex;
+         left: 0;
+         color: $ice;
+         font-size: .875rem;
+         margin-right: .5rem;
+      }
+   }
+}
+
+.company {
+   font-weight: bold;
+   color: $green;
+}
+
+.temp {
+   height: 250px;
+   background-color: $white;
+
+   @media only screen and (max-width: 768px) {
+      width: 80%;
+      height: 1400px;
+   }
+}
+

@@ -1,0 +1,94 @@
+import { useState } from "react";
+import styles from "./Contact.module.scss";
+
+const ContactForm = () => {
+  const [name, setName] = useState("");
+  const [message, setMessage] = useState("");
+  const [contact, setContact] = useState("");
+
+  let formData = {
+    name,
+    message,
+    contact,
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    // console.log(formData);
+    await fetch("/api/contact", {
+      method: "post",
+      body: JSON.stringify(formData),
+    });
+  };
+
+  return (
+    <>
+      <div className={`${styles.wrap}`}>
+        <p className={`${styles.formText}`}>
+          What&apos;s up Justin, my name is&nbsp;
+          <input
+            type="text"
+            className={styles.contactInput}
+            id="name"
+            aria-describedby="inputName"
+            placeholder="your name"
+            value={formData.name}
+            onChange={(e) => {
+              setName(e.target.value);
+            }}
+          />
+          . I want to connect because&nbsp;
+          <input
+            type="text"
+            className={styles.contactInput}
+            id="message"
+            aria-describedby="inputText"
+            placeholder="your message"
+            value={formData.message}
+            onChange={(e) => {
+              setMessage(e.target.value);
+            }}
+          />
+          . I can be reached at&nbsp;
+          <input
+            type="email"
+            className={styles.contactInput}
+            id="email"
+            aria-describedby="inputEmail"
+            placeholder="your email/phone"
+            value={formData.contact}
+            onChange={(e) => {
+              setContact(e.target.value);
+            }}
+          />
+          , I am looking forward to chatting with you.
+        </p>
+      </div>
+      <button
+        className={`${styles.send} button`}
+        onClick={(e) => {
+          handleSubmit(e);
+        }}
+      >
+        Send it
+      </button>
+    </>
+  );
+};
+
+export default function Contact() {
+  return (
+    <section id="contact" className="section is-medium">
+      <h1 className={`${styles.header} has-text-left`}>Let's Connect</h1>
+      <p className="mt-6">Want to connect? Fill out the form below!</p>
+      <p>
+        If you&apos;re old fashioned, you can&nbsp;
+        <a href="mailto:justin.pilapil@yahoo.com" className={styles.clickable}>
+          send me an email
+        </a>
+        .
+      </p>
+      <ContactForm />
+    </section>
+  );
+}

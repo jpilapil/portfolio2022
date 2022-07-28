@@ -1,0 +1,49 @@
+@import "../../styles/colors.scss";
+@import "../../styles/fonts.scss";
+
+.accent {
+   font-family: $fontFamilySecondary;
+   // https: //developer.mozilla.org/en-US/docs/Web/CSS/clamp
+   // fucking cool right?
+   font-size: clamp(.875rem, 5vw, 1rem);
+   color: $ice;
+   margin-bottom: 1rem;
+}
+
+.largeHeader {
+   margin: 0;
+   font-size: clamp(2.5rem, 8vw, 5rem);
+   color: $white;
+   line-height: 1;
+   &:nth-of-type(2) {
+      color: $grey;
+      
+   }
+}
+
+.bio {
+   margin: 1rem 0;
+   max-width: 33rem;
+   // max-width: 50%;
+}
+
+.heroButton {
+   font-family: $fontFamilySecondary;
+   margin-top: 1rem;
+   padding: 1.5rem 2rem;
+   border: 1px solid $ice;
+   background-color: $background;
+   color: $ice;
+   &:hover {
+      background-color: $transparent-ice;
+      border-color: $ice;
+      color: $ice;
+      transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);;
+   }
+   &:focus {
+      background-color: $transparent-ice;
+      border-color: $ice;
+      color: $ice;
+   }
+}
+

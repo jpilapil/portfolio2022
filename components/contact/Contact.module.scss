@@ -1,0 +1,117 @@
+@import "../../styles/colors.scss";
+@import "../../styles/fonts.scss";
+
+
+.header {
+   font-size: clamp(1.625rem, 5vw, 2rem);
+   margin-bottom: 3rem;
+
+   &::before {
+      color: $ice;
+      font-size: 1rem;
+      font-family: $fontFamilySecondary;
+      counter-increment: section 4;
+      content: ".0" counter(section);
+      font-weight: 400;
+      padding-right: .5rem;
+   }
+
+   &::after {
+      content: "";
+      display: inline-block;
+      position: relative;
+      top: -.625rem;
+      margin-left: 1.25rem;
+      width: 12rem;
+      height: 1px;
+      background-color: $dark-grey;
+
+      @media only screen and (max-width: 768px) {
+         width: 6.5rem;
+      }
+   }
+}
+
+.wrap{
+   // padding: 25px;
+   // box-shadow: 10px 10px 5px -5px rgba(0, 0, 0, 0.75);
+} 
+
+.formText {
+   color: $light-blue;
+   line-height: 3rem;
+   font-weight: bold;
+   font-size: clamp(1rem, 5vw, 1.5rem);
+   margin: 5rem;
+   @media only screen and (max-width: 768px) {
+         margin: 3rem 0;
+      }
+
+
+   &::before {
+      content: "“";
+      font-family: $fontFamilyQuotes;
+      font-size: clamp(3rem, 5vw, 4rem);
+      color: $grey;
+      padding: 1rem;
+   }
+
+   &::after {
+      content: "”";
+      font-family: $fontFamilyQuotes;
+      font-size: clamp(3rem, 5vw, 4rem);
+      color: $grey;
+      padding: 1rem;
+   }
+}
+
+
+.clickable {
+   color: $light-blue;
+   text-decoration: underline;
+   
+}
+
+.clickable:hover {
+   color: $ice;
+}
+
+.contactInput {
+   min-width: 50px !important;
+   max-width: 99.99% !important;
+   transition: width 0.25s;
+   border: none;
+   border-bottom: 1px solid $dark-grey;
+   background-color: $background;
+   text-align: center;
+   font-size: 1.5rem;
+   color: $light-blue;
+   
+
+   &:focus {
+      border-bottom: 1px solid $light-blue;
+   }
+}
+
+.send {
+   font-family: $fontFamilySecondary;
+   padding: 1.5rem 2rem;
+   border: 1px solid $ice;
+   background-color: $background;
+   color: $ice;
+
+   &:hover {
+      background-color: $transparent-ice;
+      border-color: $ice;
+      color: $ice;
+      transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+         ;
+   }
+
+   &:focus {
+      background-color: $transparent-ice;
+      border-color: $ice;
+      color: $ice;
+   }
+}
+

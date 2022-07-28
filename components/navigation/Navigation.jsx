@@ -32,6 +32,8 @@ if (typeof window === "object") {
 // use state dummy
 
 export default function Navigation() {
+  const sections = ["About", "Experience", "Projects", "Contact"];
+
   return (
     <nav
       className={`${styles.nav} navbar`}
@@ -54,21 +56,13 @@ export default function Navigation() {
 
       <div className="navbar-menu has-text-right" id="navMenu">
         <div className="navbar-end">
-          <div className="navbar-item">
-            <Link href="/">
-              <a className={`${styles.navBtn} button nav-link`}>HOME</a>
-            </Link>
-          </div>
-          <div className="navbar-item">
-            <Link href="/about">
-              <a className={`${styles.navBtn} button nav-link`}>ABOUT</a>
-            </Link>
-          </div>
-          <div className="navbar-item">
-            <Link href="/contact">
-              <a className={`${styles.navBtn} button nav-link`}>CONTACT</a>
-            </Link>
-          </div>
+          {sections.map((section, i) => (
+            <div className="navbar-item" key={i}>
+              <Link href={`#${section.toLowerCase()}`}>
+                <a className={`${styles.navBtn} button nav-link`}>{section}</a>
+              </Link>
+            </div>
+          ))}
         </div>
       </div>
     </nav>

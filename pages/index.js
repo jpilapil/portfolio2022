@@ -1,3 +1,18 @@
-import Home from "./home/Home";
+import Hero from "../components/hero";
+import About from "../components/about";
+import Contact from "../components/contact";
+import Projects from "../components/projects";
+import Jobs from "../components/jobs";
 
-export default Home;
+const IndexPage = () => {
+  return (
+    <div className="container">
+      <Hero />
+      <About />
+      <Jobs />
+      <Projects />
+      <Contact />
+    </div>
+  );
+};
+export default IndexPage;

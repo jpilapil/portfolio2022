@@ -1,38 +1,53 @@
 // @charset "utf-8";
 @import "../styles/colors.scss";
+@import "../styles/custom_bulma.scss";
+@import "../styles/fonts.scss";
 
-@import "bulma/sass/utilities/initial-variables";
-@import "bulma/sass/utilities/functions";
 
-@import "bulma/sass/utilities/_all.sass";
-@import "bulma/sass/grid/_all.sass";
-@import "bulma/sass/layout/hero.sass";
-@import "bulma/sass/elements/title.sass";
-@import "bulma/sass/helpers/_all.sass";
-@import "bulma/sass/components/card.sass";
-@import "bulma/sass/elements/image.sass";
-@import "bulma/sass/elements/tag.sass";
-@import "bulma/sass/components/navbar.sass";
-@import "bulma/sass/elements/table.sass";
-@import "bulma/sass/elements/button.sass";
+// @import "bulma/sass/utilities/initial-variables.sass";
+// @import "bulma/sass/utilities/functions.sass";
+// @import "bulma/sass/utilities/mixins.sass";
 
-// @import "../node_modules/bulma/bulma.sass";
+// @import "bulma/sass/utilities/_all.sass";
+// @import "bulma/sass/grid/_all.sass";
+// @import "bulma/sass/layout/hero.sass";
+// @import "bulma/sass/elements/title.sass";
+// @import "bulma/sass/helpers/_all.sass";
+// @import "bulma/sass/components/card.sass";
+// @import "bulma/sass/elements/image.sass";
+// @import "bulma/sass/elements/tag.sass";
+// @import "bulma/sass/components/navbar.sass";
+// @import "bulma/sass/elements/table.sass";
+// @import "bulma/sass/elements/button.sass";
 
-html,
+
+
 body {
-   font-family: "SF Pro Display", sans-serif;
-
-   padding: 0;
+   font-family: $fontFamilyMain;
+   padding: 0 4rem;
+   @media screen and (max-width: 768px) {
+      padding: 0;
+   }
    margin: 0;
-   font-size: 16px;
-   // font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-   //   Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-   color: $primary;
+   color: $white;
    background-color: $background;
-
+   font-size: clamp(1.125rem, 5vw, 1.25rem);
+   // @media only screen and (max-width: 768px) {
+   //       font-size: 1.125rem;
+   //    }
    // overflow-x: hidden;
+   
+   // for nav increment
+   counter-reset: item;
+}
 
-
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-weight: bold;
 }
 
 a {
@@ -44,50 +59,16 @@ a {
    box-sizing: border-box;
 }
 
-.button:focus {
-   outline: none;
-   box-shadow: none;
-}
 
-.input:focus{
-   outline: none !important;
-   box-shadow: none;
-}
-
-
-#site-border {
-   display: block;
-   left: 0;
-   top: 0;
-   width: calc(100%);
-   height: calc(100%);
-   border: 1rem solid $taupe;
-
-   // allows for scrolling to better suit mobile view
-   @media only screen and (min-width: 768px) {
-         position: fixed;
-      }
-}
 
 .is-size-8 {
    font-size: 3rem;
-}
-
-.table {
-   background-color: $background  !important;
-}
-
-.table td,
-.table th {
-   border: none;
-   padding: 0 1.5rem 1rem 0;
 }
 
 // no more blue highlight around buttons
 button {
    outline: 0 !important;
    box-shadow: none !important;
-   border: none;
 }
 
 a {
@@ -96,13 +77,30 @@ a {
    border: none;
 }
 
+button:focus {
+   outline: none !important;
+   box-shadow: none !important;
+   
+}
+
 input:focus {
    outline: 0 !important;
    box-shadow: none !important;
    border: none;
 }
 
-.button{
-   border: none;
+.button:focus {
+   outline: none !important;
+   box-shadow: none !important;
 }
 
+.input:focus {
+   outline: none !important;
+   box-shadow: none;
+}
+
+.button {
+   outline: 0 !important;
+   box-shadow: none !important;
+   
+}

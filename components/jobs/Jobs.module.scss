@@ -1,0 +1,92 @@
+@import "../../styles/colors.scss";
+@import "../../styles/fonts.scss";
+
+.header {
+   font-size: clamp(1.625rem, 5vw, 2rem);
+   margin-bottom: 3rem;
+
+   &::before {
+      color: $ice;
+      font-size: 1rem;
+      font-family: $fontFamilySecondary;
+      counter-increment: section 2;
+      content: ".0" counter(section);
+      font-weight: 400;
+      padding-right: .5rem;
+   }
+
+   &::after {
+      content: "";
+      display: inline-block;
+      position: relative;
+      top: -.625rem;
+      margin-left: 1.25rem;
+      width: 12rem;
+      height: 1px;
+      background-color: $dark-grey;
+
+      @media only screen and (max-width: 768px) {
+         width: 5.5rem;
+      }
+   }
+}
+
+.companySelect { 
+   font-family: $fontFamilySecondary;
+   border: none;
+   background-color: $background;
+   color: $light-blue;
+   font-size: .875rem;
+   padding: .5rem 4rem .5rem .5rem;
+   border-left: 2px solid $dark-grey;
+   width: 100%;
+   text-align: left;
+
+   &:hover {
+      background-color: $transparent-ice;
+      color: $ice;
+      cursor: pointer;
+      
+   }
+
+   &::after {
+      border-left: none;
+   }
+}
+
+.selected {
+   color: $ice;
+   border-left: 4px solid $ice;
+   // border-radius: 1px;
+}
+
+.company {
+   color: $ice;
+}
+
+.date {
+   font-size: .875rem;
+   font-family: $fontFamilySecondary;
+   color: $light-blue;
+}
+
+ul.jobDesc {
+   color: $light-blue;
+   padding: 0;
+   margin: 1.25rem 0 0 0;
+   overflow: hidden;
+   list-style: none;
+
+   li {
+      margin-bottom: .625rem;
+      padding-left: 1.25rem;
+
+      &:before {
+         content: '▹';
+         left: 0;
+         color: $ice;
+         font-size: .875rem;
+         margin-right: .5rem;
+      }
+   }
+}
