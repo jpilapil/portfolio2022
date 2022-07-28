@@ -2,9 +2,13 @@ import styles from "./Socials.module.scss";
 import { socials } from "./content";
 import Image from "next/image";
 
-export default function Socials() {
+export default function Socials({ isMobile }) {
   return (
-    <div className={`${styles.iconContainer} is-hidden-mobile`}>
+    <div
+      className={`${styles.iconContainer} ${
+        isMobile ? "is-hidden-desktop" : "is-hidden-mobile"
+      }`}
+    >
       {socials &&
         socials.map((social, i) => (
           <li key={i} className={styles.icons}>

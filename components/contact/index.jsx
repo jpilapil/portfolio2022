@@ -65,7 +65,7 @@ const ContactForm = () => {
         </p>
       </div>
       <button
-        className={`${styles.send} button`}
+        className={`${styles.send} button mt-3-mobile`}
         onClick={(e) => {
           handleSubmit(e);
         }}

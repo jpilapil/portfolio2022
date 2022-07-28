@@ -1,0 +1,8 @@
+@import "../../styles/colors.scss";
+@import "../../styles/fonts.scss";
+
+.footerContent {
+   font-family: $fontFamilySecondary;
+   color: $light-blue;
+   font-size: .875rem;
+}

@@ -35,6 +35,10 @@ $spacing-values: (
 // border radius (default 6px)
 $control-radius: 4px;
 
+// footer
+$footer-background-color: $background;
+$footer-padding: 3rem 1.5rem;
+
 
 // To successfully override the default bulma scss variables,
 // you must use the @import directive.
