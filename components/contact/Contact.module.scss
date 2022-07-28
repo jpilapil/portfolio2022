@@ -104,6 +104,8 @@
       background-color: $transparent-ice;
       border-color: $ice;
       color: $ice;
+      transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+         ;
    }
 
    &:focus {
