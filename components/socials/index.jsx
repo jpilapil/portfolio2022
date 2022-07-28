@@ -2,11 +2,11 @@ import styles from "./Socials.module.scss";
 import { socials } from "./content";
 import Image from "next/image";
 
-export default function Socials({ isMobile }) {
+export default function Socials({ isLeft }) {
   return (
     <div
       className={`${styles.iconContainer} ${
-        isMobile ? "is-hidden-desktop" : "is-hidden-mobile"
+        isLeft ? "is-hidden-touch" : "is-hidden-desktop"
       }`}
     >
       {socials &&

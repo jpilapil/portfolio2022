@@ -6,7 +6,7 @@ import Jobs from "../components/jobs";
 
 const IndexPage = () => {
   return (
-    <div className="container is-max-widescreen">
+    <div className="container">
       <Hero />
       <About />
       <Jobs />

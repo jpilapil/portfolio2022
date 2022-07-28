@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <footer class={`${styles.footerContent} footer`}>
       <div class="content has-text-centered">
-        <Socials isMobile={true} />
+        <Socials isLeft={false} />
         <p>Built by Justin Pilapil.</p>
       </div>
     </footer>

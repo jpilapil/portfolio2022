@@ -1,7 +1,7 @@
 @import "../../styles/colors.scss";
 
 .iconContainer {
-   @media screen and (min-width: 768px) {
+   @media screen and (min-width: 769px) {
       width: 40px;
          position: fixed;
          bottom: 0;
@@ -20,7 +20,7 @@
          }
    }
 
-   @media (max-width: 768px) {
+   @media screen and (max-width: 768px) {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -37,7 +37,7 @@
 
    &:last-of-type {
          margin-bottom: 20px;
-         @media (max-width: 768px) {
+         @media (max-width: 786px) {
             margin-bottom: 0;
          }
       }

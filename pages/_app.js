@@ -22,7 +22,7 @@ function MyApp({ Component, pageProps }) {
       </Head>
       <Navigation />
       <Component {...pageProps} />
-      <Socials isMobile={false} />
+      <Socials isLeft={true} />
       <Footer />
     </>
   );
