@@ -1,16 +1,8 @@
 import styles from "./About.module.scss";
 import Image from "next/image";
+import { skills } from "./content";
 
 const Bio = () => {
-  const skills = [
-    "JavaScript (ES6+)",
-    "Next.js",
-    "React",
-    "Solidiity",
-    "Node.js",
-    "Bulma",
-  ];
-
   return (
     <div className="column has-text-left">
       <h1 className={styles.header}>About Me</h1>

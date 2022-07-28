@@ -1,5 +1,6 @@
 @import "../../styles/colors.scss";
 @import "../../styles/fonts.scss";
+@import "../../styles/utils.scss";
 
 .nav {
    background-color: $background;
@@ -20,6 +21,7 @@
 
    &:hover {
       color: $ice;
+      transition: $transition;
    }
 
    &:focus {

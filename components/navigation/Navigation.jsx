@@ -1,5 +1,6 @@
 import Link from "next/link";
 import styles from "./Navigation.module.scss";
+import { sections } from "./content";
 
 // Need for bulma hamburger menu
 if (typeof window === "object") {
@@ -28,12 +29,7 @@ if (typeof window === "object") {
   });
 }
 
-// how to pass the active state to show which page is active:
-// use state dummy
-
 export default function Navigation() {
-  const sections = ["About", "Experience", "Projects", "Contact"];
-
   return (
     <nav
       className={`${styles.nav} navbar`}
@@ -58,8 +54,10 @@ export default function Navigation() {
         <div className="navbar-end">
           {sections.map((section, i) => (
             <div className="navbar-item" key={i}>
-              <Link href={`#${section.toLowerCase()}`}>
-                <a className={`${styles.navBtn} button nav-link`}>{section}</a>
+              <Link href={section.path}>
+                <a className={`${styles.navBtn} button nav-link`}>
+                  {section.title}
+                </a>
               </Link>
             </div>
           ))}
