@@ -1,5 +1,5 @@
 module.exports = {
-  skills: [
+  technologies: [
     "JavaScript (ES6+)",
     "Next.js",
     "React",

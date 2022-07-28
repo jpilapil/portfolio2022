@@ -1,6 +1,6 @@
 import styles from "./About.module.scss";
 import Image from "next/image";
-import { skills } from "./content";
+import { technologies } from "./content";
 
 const Bio = () => {
   return (
@@ -22,8 +22,8 @@ const Bio = () => {
       <br />
       <p>Here are a few technologies I've been working with recently:</p>
       <br />
-      <ul className={styles.skills}>
-        {skills && skills.map((skill) => <li key={skill}>{skill}</li>)}
+      <ul className={styles.technologies}>
+        {technologies && technologies.map((tech, i) => <li key={i}>{tech}</li>)}
       </ul>
     </div>
   );

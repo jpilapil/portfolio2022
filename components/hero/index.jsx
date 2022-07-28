@@ -18,7 +18,7 @@ export default function Hero() {
           Concierge Software Design.
         </p>
         <Link href="#contact">
-          <button className={`${styles.heroButton} button`} href="#contact">
+          <button className={`${styles.heroButton} button`}>
             Get in contact
           </button>
         </Link>
