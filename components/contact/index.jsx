@@ -5,6 +5,8 @@ const ContactForm = () => {
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");
   const [contact, setContact] = useState("");
+  const [success, setSuccess] = useState(null);
+  const [response, setResponse] = useState("");
 
   let formData = {
     name,
@@ -14,10 +16,31 @@ const ContactForm = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    // console.log(formData);
     await fetch("/api/contact", {
       method: "post",
       body: JSON.stringify(formData),
+    }).then((res) => {
+      switch (res.status) {
+        case 200:
+          setSuccess(true);
+          setResponse("Your message has been received!");
+          setName("");
+          setMessage("");
+          setContact("");
+          break;
+        case 400:
+          setSuccess(false);
+          setResponse("Please fill out all fields.");
+          break;
+        case 500:
+          setSuccess(false);
+          setResponse("Unable to send your message, please try again.");
+          break;
+        default:
+          setSuccess(false);
+          setResponse("Unable to send your message, please try again.");
+          break;
+      }
     });
   };
 
@@ -63,6 +86,14 @@ const ContactForm = () => {
           />
           , I am looking forward to chatting with you.
         </p>
+      </div>
+
+      <div
+        className={`${
+          success ? styles.success : styles.error
+        } has-text-centered`}
+      >
+        <h1>{response}</h1>
       </div>
       <button
         className={`${styles.send} button`}
