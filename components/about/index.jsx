@@ -20,7 +20,7 @@ const Bio = () => {
         combining business goals with creative solutions.
       </p>
       <br />
-      <p>Here are a few technologies I've been working with recently:</p>
+      <p>Here are a few technologies I&apos;ve been working with recently:</p>
       <br />
       <ul className={styles.technologies}>
         {technologies && technologies.map((tech, i) => <li key={i}>{tech}</li>)}

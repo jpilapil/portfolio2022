@@ -110,7 +110,7 @@ const ContactForm = () => {
 export default function Contact() {
   return (
     <section id="contact" className="section is-medium">
-      <h1 className={`${styles.header} has-text-left`}>Let's Connect</h1>
+      <h1 className={`${styles.header} has-text-left`}>Let&apos;s Connect</h1>
       <p className="mt-6">Want to connect? Fill out the form below!</p>
       <p>
         If you&apos;re old fashioned, you can&nbsp;

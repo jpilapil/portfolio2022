@@ -80,7 +80,7 @@
 .contactInput {
    min-width: 50px !important;
    max-width: 99.99% !important;
-   transition: width 0.25s;
+   transition: $transition;
    border: none;
    border-bottom: 1px solid $dark-grey;
    background-color: $background;
