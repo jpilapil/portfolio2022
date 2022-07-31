@@ -31,7 +31,17 @@ const Bio = () => {
 };
 
 const Mugshot = () => {
-  return <div className={`${styles.temp} column has-text-right`}></div>;
+  return (
+    <div className={`${styles.imageWrapper} column m-auto has-text-centered`}>
+      <Image
+        className={styles.mugshot}
+        src="/mugshot/fudder.png"
+        alt="Justin Pilapil"
+        width={350}
+        height={350}
+      />
+    </div>
+  );
 };
 
 export default function About() {
