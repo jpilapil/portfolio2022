@@ -18,6 +18,7 @@ export default function Projects() {
                   draggable={false}
                   layout="fill"
                   objectFit="contain"
+                  priority={true}
                 />
               </a>
             </figure>
@@ -36,8 +37,8 @@ export default function Projects() {
               <ul className={styles.tech}>
                 {project.externals &&
                   project.externals.map((item, i) => (
-                    <a href={item.url}>
-                      <li key={i} className={styles.icons}>
+                    <a key={i} href={item.url}>
+                      <li className={styles.icons}>
                         <Image
                           src={item.src}
                           alt={item.name}

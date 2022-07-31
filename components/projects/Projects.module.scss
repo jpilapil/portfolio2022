@@ -36,8 +36,6 @@
 
 .projectImage {
    border-radius: 4px;
-
-   
 }
 
 .icons {
@@ -172,7 +170,6 @@
       color: $ice;
       font-size: clamp(24px, 5vw, 28px);
       font-weight: bold;
-      
 
       &:hover {
          color: $light-blue;
@@ -250,31 +247,6 @@
          }
       }
    }
-   
-   // .project-links {
-   //    display: flex;
-   //    align-items: center;
-   //    position: relative;
-   //    margin-top: 10px;
-   //    margin-left: -10px;
-   //    color: var(--lightest-slate);
-   
-   //    padding: 10px;
-   
-   //    &.external {
-   //       svg {
-   //          width: 22px;
-   //          height: 22px;
-   //          margin-top: -4px;
-   //       }
-   //    }
-   
-   //    svg {
-   //       width: 20px;
-   //       height: 20px;
-   //    }
-   // }
-   
    
    .imageWrapper {
       transition: $transition;
