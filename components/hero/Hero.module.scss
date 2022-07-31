@@ -48,3 +48,12 @@
    }
 }
 
+.job {
+   color: $ice;
+
+   &:hover{
+      color: $light-blue;
+      transition: $transition;
+   }
+}
+

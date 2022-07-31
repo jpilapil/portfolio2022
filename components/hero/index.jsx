@@ -14,8 +14,11 @@ export default function Hero() {
         <p className={styles.bio}>
           I&apos;m a software developer who specializes in creating (and
           occasionally designing) exceptional digital experiences. Currently,
-          I&apos;m focused on building custom software solutions for clients at
-          Concierge Software Design.
+          I&apos;m focused on building custom software solutions for clients
+          at&nbsp;
+          <a href="https://conciergesoftwaredesign.com/" className={styles.job}>
+            Concierge Software Design.
+          </a>
         </p>
         <Link href="#contact">
           <button className={`${styles.heroButton} button`}>
