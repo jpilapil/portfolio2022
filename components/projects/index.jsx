@@ -48,7 +48,7 @@ export default function Projects() {
                     </a>
                   ))}
                 {project.comingSoon && (
-                  <li className={styles.comingSoon}>
+                  <li key={i} className={styles.comingSoon}>
                     Current project: Coming Soon!
                   </li>
                 )}
