@@ -15,7 +15,7 @@ module.exports = {
     {
       title: "Front End Engineer",
       company: "IONnovate",
-      date: "September 2020 - February 2021",
+      date: "September 2020 - April 2021",
       description: [
         "Lead development sprints in an agile environment to meet biweekly goals.",
         "Established CI/CD pipeline for projects to automate build and test processes.",
@@ -36,7 +36,7 @@ module.exports = {
     {
       title: "Web Developer (Contract)",
       company: "Refined Living",
-      date: "January 2019 - December 2020",
+      date: "January 2019 - September 2020",
       description: [
         "Developed and maintained code for clients website primarily using WordPress, HTML, CSS, and PHP.",
         "Manually tested sites in various browsers and mobile devices to ensure cross-browser compatibility and responsiveness.",
