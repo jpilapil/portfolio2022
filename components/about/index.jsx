@@ -9,15 +9,16 @@ const Bio = () => {
       <p className="mt-6">
         Hey, my name is Justin, a software developer with over 3 years of
         professional experience. I consider myself a problem solver with
-        creative visual solutions.
+        creative visual solutions. I enjoy exploring possibilities and am
+        constantly searching for challenges to improve my skills.
       </p>
       <br />
       <p>
-        I enjoy exploring possibilities and am constantly searching for
-        challenges to improve my skills. I belive that my job as a developer is
-        more than just creating eye-catching, easy to use applications. It is
-        more about closing the gap between the user and their goals while
-        combining business goals with creative solutions.
+        I belive that my job as a developer is more than just creating
+        eye-catching, easy to use applications. It is more about closing the gap
+        between the user and their goals while combining business goals with
+        creative solutions. In my free time, I am currently dabbling in the
+        world of cryptocurrency, blockchain, and game development.
       </p>
       <br />
       <p>Here are a few technologies I&apos;ve been working with recently:</p>

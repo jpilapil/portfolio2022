@@ -68,13 +68,12 @@
 
 
 .clickable {
-   color: $light-blue;
-   text-decoration: underline;
+   color: $ice;
    
 }
 
 .clickable:hover {
-   color: $ice;
+   color: $light-blue;
 }
 
 .contactInput {
