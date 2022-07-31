@@ -11,7 +11,16 @@ module.exports = {
         "Collaborated with small team of developers in development sprints to create cyber security solutions, parsing multiple threat sources and serving multiple clients.",
       ],
     },
-
+    {
+      title: "Web Developer (Contract)",
+      company: "Code Legion",
+      date: "December 2020 - Feb 2021",
+      description: [
+        "Designed and developed elegant website for Code Legion, a school that jumpstarts students careers into tech.",
+        "Implemented an email management system that handles sensitive user information and allows the client to easily communicate with users on their email list.",
+        "Worked closely with company stakeholders to meet project deadlines.",
+      ],
+    },
     {
       title: "Front End Engineer",
       company: "IONnovate",
@@ -21,16 +30,6 @@ module.exports = {
         "Established CI/CD pipeline for projects to automate build and test processes.",
         "Developed branch strategies for projects with GitHub and managed merge conflicts using Git",
         "Implemented test driven development using Jest unit testing framework.",
-      ],
-    },
-    {
-      title: "Web Developer (Contract)",
-      company: "Code Legion",
-      date: "December 2020 - Feb 2021",
-      description: [
-        "Designed and developed elegant website for Code Legion, a school that jumpstarts students careers into tech.",
-        "Implemented an email management system that handles sensitive user information and allows the client to easily communicate with users on their email list.",
-        "Worked closely with company stakeholders to meet project deadlines.",
       ],
     },
     {
