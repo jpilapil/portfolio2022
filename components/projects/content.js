@@ -3,7 +3,7 @@ module.exports = {
     {
       projectName: "Pepi Mafia",
       desc: "A NFT (Non-Fungible Token) PFP collection built within the NFT Worlds ecosystem, a Metaverse platform with full Minecraft integration.",
-      tech: ["React", "SCSS", "Alchemy API", "Solidity", "Web3"],
+      tech: ["React", "Sass", "Alchemy API", "Solidity", "Web3"],
       src: "/project-images/pepi.png",
       url: null,
       comingSoon: true,
