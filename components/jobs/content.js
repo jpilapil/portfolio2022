@@ -5,7 +5,7 @@ module.exports = {
       company: "Concierge Software Design",
       date: "April 2021 - Present",
       description: [
-        "Collaborate with an agile team of developers and project managers in bi-weekly sprints to create cyber security solutions, parsing multiple threat sources and serving them to clients.",
+        "Collaborate with an agile team of developers and project managers in bi-weekly sprints to build cyber security solutions, parse multiple threat sources and serve them to clients.",
         "Contribute to engineering software for smart medical devices that accurately dispense medicine, allowing patients to reliably take medication at their scheduled times.",
         "Re-engineer multiple systems that fueled improvements to productivity, efficiency, uptime and accuracy for business operations.",
         "Work closely with a design and SEO team to create a fresh site for a large sportsbook.",

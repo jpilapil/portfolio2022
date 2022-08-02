@@ -40,3 +40,24 @@
    }
 }
 
+.resume {
+   font-size: .875rem;
+   font-family: $fontFamilySecondary;
+   padding: 1.5rem 2rem;
+   border: 1px solid $ice;
+   background-color: $background;
+   color: $ice;
+
+   &:hover {
+      background-color: $transparent-ice;
+      border-color: $ice;
+      color: $ice;
+      transition: $transition;
+   }
+
+   &:focus {
+      background-color: $transparent-ice;
+      border-color: $ice;
+      color: $ice;
+   }
+}
