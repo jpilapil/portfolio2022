@@ -7,4 +7,9 @@ module.exports = {
     "Node.js",
     "Bulma",
   ],
+
+  justin: {
+    name: "Justin Pilapil",
+    pfp: "/mugshot/fudder.png",
+  },
 };

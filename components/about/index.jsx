@@ -1,6 +1,6 @@
 import styles from "./About.module.scss";
 import Image from "next/image";
-import { technologies } from "./content";
+import { technologies, justin } from "./content";
 
 const Bio = () => {
   return (
@@ -35,8 +35,8 @@ const Mugshot = () => {
     <div className={`${styles.imageWrapper} column m-auto has-text-centered`}>
       <Image
         className={styles.mugshot}
-        src="/mugshot/fudder.png"
-        alt="Justin Pilapil"
+        src={justin.pfp}
+        alt={justin.name}
         width={350}
         height={350}
       />
