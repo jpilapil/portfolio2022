@@ -70,6 +70,11 @@ ul.technologies {
 
 .mugshot {
    border-radius: 4px;
+   filter: grayscale(75%) contrast(1) brightness(90%);
+   
+   &:hover {
+      filter: none;
+   }
 }
 
 
