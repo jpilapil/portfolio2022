@@ -5,4 +5,6 @@ module.exports = {
     { title: "Projects", path: "#projects" },
     { title: "Contact", path: "#contact" },
   ],
+
+  logo: "/mugshot/fudder.png",
 };

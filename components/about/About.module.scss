@@ -1,5 +1,6 @@
 @import "../../styles/colors.scss";
 @import "../../styles/fonts.scss";
+@import "../../styles/utils.scss";
 
 .header {
    // font-size: 2rem;
@@ -71,7 +72,7 @@ ul.technologies {
 .mugshot {
    border-radius: 4px;
    filter: grayscale(75%) contrast(1) brightness(90%);
-   
+   transition: $transition;
    &:hover {
       filter: none;
    }

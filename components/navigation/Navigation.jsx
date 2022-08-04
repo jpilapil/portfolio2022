@@ -1,6 +1,7 @@
 import Link from "next/link";
+import Image from "next/image";
 import styles from "./Navigation.module.scss";
-import { sections } from "./content";
+import { sections, logo } from "./content";
 
 // Need for bulma hamburger menu
 if (typeof window === "object") {
@@ -37,6 +38,15 @@ export default function Navigation() {
       aria-label="main navigation"
     >
       <div className="navbar-brand">
+        <a className="navbar-item" href="/">
+          <Image
+            className={styles.logo}
+            src={logo}
+            alt="Fudder Logo"
+            width={50}
+            height={50}
+          />
+        </a>
         <a
           role="button"
           className="navbar-burger"
