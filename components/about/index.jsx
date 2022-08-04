@@ -46,7 +46,11 @@ const Mugshot = () => {
 
 export default function About() {
   return (
-    <section id="about" className="section columns is-medium">
+    <section
+      id="about"
+      className="section columns is-medium"
+      data-aos="fade-up"
+    >
       <Bio />
       <Mugshot />
     </section>

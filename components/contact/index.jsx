@@ -109,7 +109,7 @@ const ContactForm = () => {
 
 export default function Contact() {
   return (
-    <section id="contact" className="section is-medium">
+    <section id="contact" className="section is-medium" data-aos="fade-up">
       <h1 className={`${styles.header} has-text-left`}>Let&apos;s Connect</h1>
       <p className="mt-6">Want to connect? Fill out the form below!</p>
       <p>

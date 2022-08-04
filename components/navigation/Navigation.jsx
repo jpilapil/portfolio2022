@@ -36,6 +36,8 @@ export default function Navigation() {
       className={`${styles.nav} navbar`}
       role="navigation"
       aria-label="main navigation"
+      data-aos="fade-down"
+      data-aos-delay={750}
     >
       <div className="navbar-brand">
         <a className="navbar-item" href="/">

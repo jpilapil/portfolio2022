@@ -8,6 +8,8 @@ export default function Socials({ isLeft }) {
       className={`${styles.iconContainer} ${
         isLeft ? "is-hidden-touch" : "is-hidden-desktop"
       }`}
+      data-aos="fade-up"
+      data-aos-delay={750}
     >
       {socials &&
         socials.map((social, i) => (

@@ -6,8 +6,10 @@ export default function Hero() {
     <section
       id="main"
       className="hero is-fullheight is-justify-content-center is-align-items-center section"
+      data-aos="fade-up"
+      data-aos-delay={500}
     >
-      <div className="">
+      <div>
         <p className={styles.accent}>Hi, my name is</p>
         <h1 className={styles.largeHeader}>Justin Pilapil.</h1>
         <h1 className={styles.largeHeader}>I enjoy building dope @#$%.</h1>

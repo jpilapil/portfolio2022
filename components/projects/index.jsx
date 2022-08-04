@@ -5,10 +5,17 @@ import { projectList } from "./content";
 export default function Projects() {
   return (
     <section id="projects" className="section is-medium">
-      <h1 className={`${styles.header} has-text-left`}>Projects</h1>
+      <h1 className={`${styles.header} has-text-left`} data-aos="fade-up">
+        Projects
+      </h1>
       {projectList &&
         projectList.map((project, i) => (
-          <div className={styles.projectGrid} key={i}>
+          <div
+            className={styles.projectGrid}
+            key={i}
+            data-aos="fade-up"
+            data-aos-delay={i * 150}
+          >
             <figure className={`${styles.imageWrapper} image`}>
               <a href={project.url}>
                 <Image

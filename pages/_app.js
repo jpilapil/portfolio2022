@@ -10,8 +10,10 @@ import Footer from "../components/footer";
 function MyApp({ Component, pageProps }) {
   // control for fade in animation on components
   useEffect(() => {
-    AOS.init();
-  });
+    AOS.init({
+      duration: 1250,
+    });
+  }, []);
   return (
     <>
       <Head>
