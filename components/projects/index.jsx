@@ -14,7 +14,7 @@ export default function Projects() {
             className={styles.projectGrid}
             key={i}
             data-aos="fade-up"
-            data-aos-delay={i * 150}
+            data-aos-delay={i * 100}
           >
             <figure className={`${styles.imageWrapper} image`}>
               <a href={project.url}>
