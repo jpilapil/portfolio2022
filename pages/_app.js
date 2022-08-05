@@ -21,6 +21,7 @@ function MyApp({ Component, pageProps }) {
           name="viewport"
           content="width=device-width, initial-scale=1, minimum-scale=1"
         />
+        <title>Justin Pilapil | Software Developer</title>
       </Head>
       <Navigation />
       <Component {...pageProps} />

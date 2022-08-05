@@ -14,11 +14,15 @@ export default function Hero() {
         <h1 className={styles.largeHeader}>Justin Pilapil.</h1>
         <h1 className={styles.largeHeader}>I enjoy building dope @#$%.</h1>
         <p className={styles.bio}>
-          I&apos;m a software developer who specializes in creating (and
-          occasionally designing) exceptional digital experiences. Currently,
-          I&apos;m focused on building custom software solutions for clients
-          at&nbsp;
-          <a href="https://conciergesoftwaredesign.com/" className={styles.job}>
+          I&apos;m a software developer who enjoys creating and designing
+          exceptional digital experiences. Currently, I&apos;m focused on
+          building custom software solutions for clients at&nbsp;
+          <a
+            href="https://conciergesoftwaredesign.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.job}
+          >
             Concierge Software Design.
           </a>
         </p>

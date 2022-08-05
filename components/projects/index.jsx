@@ -17,7 +17,7 @@ export default function Projects() {
             data-aos-delay={i * 100}
           >
             <figure className={`${styles.imageWrapper} image`}>
-              <a href={project.url}>
+              <a href={project.url} target="_blank" rel="noopener noreferrer">
                 <Image
                   className={styles.projectImage}
                   src={project.src}
@@ -30,7 +30,12 @@ export default function Projects() {
               </a>
             </figure>
             <div className={styles.content}>
-              <a href={project.url} className={styles.title}>
+              <a
+                href={project.url}
+                className={styles.title}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 {project.projectName}
               </a>
               <div className={styles.desc}>
@@ -44,7 +49,12 @@ export default function Projects() {
               <ul className={styles.tech}>
                 {project.externals &&
                   project.externals.map((item, i) => (
-                    <a key={i} href={item.url}>
+                    <a
+                      key={i}
+                      href={item.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <li className={styles.icons}>
                         <Image
                           src={item.src}

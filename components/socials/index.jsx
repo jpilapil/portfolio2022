@@ -14,7 +14,7 @@ export default function Socials({ isLeft }) {
       {socials &&
         socials.map((social, i) => (
           <li key={i} className={styles.icons}>
-            <a href={social.url}>
+            <a href={social.url} target="_blank" rel="noopener noreferrer">
               <Image
                 src={social.src}
                 alt={social.name}
