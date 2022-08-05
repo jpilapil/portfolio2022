@@ -1,11 +1,12 @@
 @import "../../styles/colors.scss";
+@import "../../styles/utils.scss";
 
 .iconContainer {
    @media screen and (min-width: 769px) {
-      width: 40px;
+      width: 2.5rem;
          position: fixed;
          bottom: 0;
-         left: 40px;
+         left: 2.5rem;
          right: auto;
          z-index: 10;
       
@@ -13,9 +14,9 @@
             content: '';
             display: flex;
             width: 1px;
-            height: 90px;
+            height: 5.625rem;
             margin: 0 auto;
-            left: 40px;
+            left: 2.5rem;
             background-color: $light-blue;
          }
    }
@@ -36,7 +37,7 @@
    filter: invert(75%) sepia(4%) saturate(1223%) hue-rotate(178deg) brightness(98%) contrast(90%);
 
    &:last-of-type {
-         margin-bottom: 20px;
+         margin-bottom: 1.25rem;
          @media (max-width: 786px) {
             margin-bottom: 0;
          }
@@ -44,12 +45,12 @@
    
       a {
          display: inline-block;
-         padding: 10px;
+         padding: .625rem;
    
          &:hover,
          &:focus {
             transform: translateY(-3px);
-
+            transition: $transition;
             // closest i can find to $ice
             filter: invert(76%) sepia(20%) saturate(500%) hue-rotate(147deg) brightness(90%) contrast(97%);
          }

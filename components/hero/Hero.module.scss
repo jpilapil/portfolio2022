@@ -1,5 +1,6 @@
 @import "../../styles/colors.scss";
 @import "../../styles/fonts.scss";
+@import "../../styles/utils.scss";
 
 .accent {
    font-family: $fontFamilySecondary;
@@ -23,7 +24,7 @@
 
 .bio {
    margin: 1rem 0;
-   max-width: 33rem;
+   max-width: 37rem;
    // max-width: 50%;
 }
 
@@ -38,12 +39,21 @@
       background-color: $transparent-ice;
       border-color: $ice;
       color: $ice;
-      transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);;
+      transition: $transition;
    }
    &:focus {
       background-color: $transparent-ice;
       border-color: $ice;
       color: $ice;
+   }
+}
+
+.job {
+   color: $ice;
+
+   &:hover{
+      color: $light-blue;
+      transition: $transition;
    }
 }
 

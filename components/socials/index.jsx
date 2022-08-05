@@ -8,11 +8,13 @@ export default function Socials({ isLeft }) {
       className={`${styles.iconContainer} ${
         isLeft ? "is-hidden-touch" : "is-hidden-desktop"
       }`}
+      data-aos={isLeft ? "fade-up" : ""}
+      data-aos-delay={750}
     >
       {socials &&
         socials.map((social, i) => (
           <li key={i} className={styles.icons}>
-            <a href={social.url}>
+            <a href={social.url} target="_blank" rel="noopener noreferrer">
               <Image
                 src={social.src}
                 alt={social.name}

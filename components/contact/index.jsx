@@ -5,6 +5,8 @@ const ContactForm = () => {
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");
   const [contact, setContact] = useState("");
+  const [success, setSuccess] = useState(null);
+  const [response, setResponse] = useState("");
 
   let formData = {
     name,
@@ -14,10 +16,31 @@ const ContactForm = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    // console.log(formData);
     await fetch("/api/contact", {
       method: "post",
       body: JSON.stringify(formData),
+    }).then((res) => {
+      switch (res.status) {
+        case 200:
+          setSuccess(true);
+          setResponse("Your message has been received!");
+          setName("");
+          setMessage("");
+          setContact("");
+          break;
+        case 400:
+          setSuccess(false);
+          setResponse("Please fill out all fields.");
+          break;
+        case 500:
+          setSuccess(false);
+          setResponse("Unable to send your message, please try again.");
+          break;
+        default:
+          setSuccess(false);
+          setResponse("Unable to send your message, please try again.");
+          break;
+      }
     });
   };
 
@@ -64,6 +87,14 @@ const ContactForm = () => {
           , I am looking forward to chatting with you.
         </p>
       </div>
+
+      <div
+        className={`${
+          success ? styles.success : styles.error
+        } has-text-centered`}
+      >
+        <h1>{response}</h1>
+      </div>
       <button
         className={`${styles.send} button`}
         onClick={(e) => {
@@ -78,8 +109,8 @@ const ContactForm = () => {
 
 export default function Contact() {
   return (
-    <section id="contact" className="section is-medium">
-      <h1 className={`${styles.header} has-text-left`}>Let's Connect</h1>
+    <section id="contact" className="section is-medium" data-aos="fade-up">
+      <h1 className={`${styles.header} has-text-left`}>Let&apos;s Connect</h1>
       <p className="mt-6">Want to connect? Fill out the form below!</p>
       <p>
         If you&apos;re old fashioned, you can&nbsp;

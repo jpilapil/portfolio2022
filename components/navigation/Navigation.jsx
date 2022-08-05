@@ -1,5 +1,7 @@
 import Link from "next/link";
+import Image from "next/image";
 import styles from "./Navigation.module.scss";
+import { sections, logo } from "./content";
 
 // Need for bulma hamburger menu
 if (typeof window === "object") {
@@ -28,19 +30,25 @@ if (typeof window === "object") {
   });
 }
 
-// how to pass the active state to show which page is active:
-// use state dummy
-
 export default function Navigation() {
-  const sections = ["About", "Experience", "Projects", "Contact"];
-
   return (
     <nav
       className={`${styles.nav} navbar`}
       role="navigation"
       aria-label="main navigation"
+      data-aos="fade-down"
+      data-aos-delay={750}
     >
       <div className="navbar-brand">
+        <a className="navbar-item" href="/">
+          <Image
+            className={styles.logo}
+            src={logo}
+            alt="Fudder Logo"
+            width={50}
+            height={50}
+          />
+        </a>
         <a
           role="button"
           className="navbar-burger"
@@ -58,11 +66,23 @@ export default function Navigation() {
         <div className="navbar-end">
           {sections.map((section, i) => (
             <div className="navbar-item" key={i}>
-              <Link href={`#${section.toLowerCase()}`}>
-                <a className={`${styles.navBtn} button nav-link`}>{section}</a>
+              <Link href={section.path}>
+                <a className={`${styles.navBtn} button nav-link`}>
+                  {section.title}
+                </a>
               </Link>
             </div>
           ))}
+          <div className="navbar-item">
+            <a
+              href="https://docs.google.com/document/d/18R39a-n84GIXFGcOvysBccDm45usbMsevfbwTZyAoO4/edit?usp=sharing"
+              className={`${styles.resume} button`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Resume
+            </a>
+          </div>
         </div>
       </div>
     </nav>

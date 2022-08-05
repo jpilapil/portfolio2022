@@ -10,8 +10,10 @@ import Footer from "../components/footer";
 function MyApp({ Component, pageProps }) {
   // control for fade in animation on components
   useEffect(() => {
-    AOS.init();
-  });
+    AOS.init({
+      duration: 1250,
+    });
+  }, []);
   return (
     <>
       <Head>
@@ -19,6 +21,7 @@ function MyApp({ Component, pageProps }) {
           name="viewport"
           content="width=device-width, initial-scale=1, minimum-scale=1"
         />
+        <title>Justin Pilapil | Software Developer</title>
       </Head>
       <Navigation />
       <Component {...pageProps} />

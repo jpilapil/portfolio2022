@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { v4 as getUuid } from "uuid";
 import styles from "./Jobs.module.scss";
+import { jobs } from "./content";
 
 export default function Jobs() {
   // set initial state to first index of jobs array
@@ -10,33 +10,8 @@ export default function Jobs() {
     setShowJobInfo(i);
   };
 
-  const jobs = [
-    {
-      id: getUuid(),
-      title: "Software Developer",
-      company: "Concierge Software Design",
-      date: "April 2021 - Present",
-      description: ["test1", "test2", "test3"],
-    },
-
-    {
-      id: getUuid(),
-      title: "Front End Engineer",
-      company: "IONnovate",
-      date: "September 2020 - February 2021",
-      description: ["test1", "test2", "test3"],
-    },
-    {
-      id: getUuid(),
-      title: "Web Developer (Contract)",
-      company: "Refined Living",
-      date: "January 2019 - December 2020",
-      description: ["test1", "test2", "test3"],
-    },
-  ];
-
   return (
-    <section id="experience" className="section is-medium">
+    <section id="experience" className="section is-medium" data-aos="fade-up">
       <h1 className={`${styles.header} has-text-left`}>Previous Roles</h1>
       <div className="columns">
         <div className="column is-4">

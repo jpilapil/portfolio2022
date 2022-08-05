@@ -1,5 +1,6 @@
 @import "../../styles/colors.scss";
 @import "../../styles/fonts.scss";
+@import "../../styles/utils.scss";
 
 
 .header {
@@ -32,10 +33,10 @@
    }
 }
 
-.wrap{
-   // padding: 25px;
-   // box-shadow: 10px 10px 5px -5px rgba(0, 0, 0, 0.75);
-} 
+// .wrap{
+//    padding: 25px;
+//    box-shadow: 10px 10px 5px -5px rgba(0, 0, 0, 0.75);
+// } 
 
 .formText {
    color: $light-blue;
@@ -67,19 +68,18 @@
 
 
 .clickable {
-   color: $light-blue;
-   text-decoration: underline;
+   color: $ice;
    
 }
 
 .clickable:hover {
-   color: $ice;
+   color: $light-blue;
 }
 
 .contactInput {
    min-width: 50px !important;
    max-width: 99.99% !important;
-   transition: width 0.25s;
+   transition: $transition;
    border: none;
    border-bottom: 1px solid $dark-grey;
    background-color: $background;
@@ -104,8 +104,7 @@
       background-color: $transparent-ice;
       border-color: $ice;
       color: $ice;
-      transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
-         ;
+      transition: $transition;
    }
 
    &:focus {
@@ -115,3 +114,14 @@
    }
 }
 
+.error {
+   color: $red;
+   font-size: clamp(1rem, 5vw, 1.5rem);
+   margin-bottom: 1rem;
+}
+
+.success {
+   color: $green;
+   font-size: clamp(1rem, 5vw, 1.5rem);
+   margin-bottom: 1rem;
+}

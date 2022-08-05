@@ -1,5 +1,6 @@
 @import "../../styles/colors.scss";
 @import "../../styles/fonts.scss";
+@import "../../styles/utils.scss";
 
 .header {
    // font-size: 2rem;
@@ -31,7 +32,7 @@
    }  
 }
 
-ul.skills {
+ul.technologies {
    color: $light-blue;
    display: grid;
    grid-template-columns: repeat(2, minmax(140px, 200px));
@@ -64,13 +65,17 @@ ul.skills {
    color: $green;
 }
 
-.temp {
-   height: 250px;
-   background-color: $white;
+.imageWrapper>span {
+   box-shadow: 0 10px 30px -15px black;
+}
 
-   @media only screen and (max-width: 768px) {
-      width: 80%;
-      height: 1400px;
+.mugshot {
+   border-radius: 4px;
+   filter: grayscale(75%) contrast(1) brightness(90%);
+   transition: $transition;
+   &:hover {
+      filter: none;
    }
 }
+
 
