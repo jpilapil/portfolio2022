@@ -40,15 +40,17 @@ export default function Navigation() {
       data-aos-delay={750}
     >
       <div className="navbar-brand">
-        <a className="navbar-item" href="/">
-          <Image
-            className={styles.logo}
-            src={logo}
-            alt="Fudder Logo"
-            width={50}
-            height={50}
-          />
-        </a>
+        <Link href="/">
+          <a className="navbar-item">
+            <Image
+              className={styles.logo}
+              src={logo}
+              alt="Fudder Logo"
+              width={50}
+              height={50}
+            />
+          </a>
+        </Link>
         <a
           role="button"
           className="navbar-burger"
