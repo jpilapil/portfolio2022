@@ -2,7 +2,7 @@ module.exports = {
   projectList: [
     {
       projectName: "Pepi Mafia",
-      desc: "A NFT (Non-Fungible Token) PFP collection built within the NFT Worlds ecosystem, a Metaverse platform with full Minecraft integration.",
+      desc: "A NFT (Non-Fungible Token) pixel art PFP collection built within the NFT Worlds ecosystem, a sandbox Metaverse platform.",
       tech: ["React", "Sass", "Alchemy API", "Solidity", "Web3"],
       src: "/project-images/pepi.png",
       url: null,
@@ -28,15 +28,15 @@ module.exports = {
       ],
     },
     {
-      projectName: "Stay Hydrated",
-      desc: "A simple system tray application built with Electron to remind me of one simple task... to stay hydrated.",
-      tech: ["React", "Electron", "Bootstrap"],
-      src: "/project-images/hydrate.png",
-      url: "https://github.com/jpilapil/stay-hydrated",
+      projectName: "Nord Portfolio",
+      desc: "Probably the website you're looking at right now! Simplistic design and color palette inspired by my current favorite IDE theme, Nord.",
+      tech: ["React", "Next.js", "SCSS", "Slack API"],
+      src: "/project-images/portfolio.png",
+      url: "https://github.com/jpilapil/portfolio2022",
       externals: [
         {
           name: "Github",
-          url: "https://github.com/jpilapil/stay-hydrated",
+          url: "https://github.com/jpilapil/portfolio2022",
           src: "/icons/github.svg",
         },
       ],
