@@ -1,9 +1,20 @@
 module.exports = {
   jobs: [
     {
+      title: "Front End Software Engineer",
+      company: "Vail Resorts",
+      date: "September 2022 - Current",
+      description: [
+        "Lead Development/Coding on Projects - provide leadership, technical direction, and mentoring for the developers on the team.",
+        "Monitor, support and troubleshoot Priority 1 issues with resort websites and mobile applications.",
+        "Work closely with product team to ensure that project plans, stories, and estimates are accurate and ensure that features delivered meet requirements and are delivered on-time.",
+        "Maintain and implement new features for our 37 resort e-commerce platform using MVC .Net, React.JS, and Sitecore CMS.",
+      ],
+    },
+    {
       title: "Software Developer",
       company: "Concierge Software Design",
-      date: "April 2021 - Present",
+      date: "April 2021 - September 2022",
       description: [
         "Collaborate with an agile team of developers and project managers in a daily scrum to build cyber security solutions, parse multiple threat sources and serve them to clients.",
         "Contribute to engineering software for smart medical devices that accurately dispense medicine, allowing patients to reliably take medication at their scheduled times.",

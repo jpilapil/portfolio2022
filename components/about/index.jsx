@@ -7,7 +7,7 @@ const Bio = () => {
     <div className="column has-text-left">
       <h1 className={styles.header}>About Me</h1>
       <p className="mt-6">
-        Hey my name is Justin, a software developer with over 3 years of
+        Hey my name is Justin, a software developer with over 4 years of
         professional experience. I consider myself a problem solver with
         creative visual solutions. I enjoy exploring possibilities and I&apos;m
         constantly searching for challenges to improve my skills.
