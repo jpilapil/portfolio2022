@@ -16,14 +16,14 @@ export default function Hero() {
         <p className={styles.bio}>
           I&apos;m a software developer who enjoys creating and designing
           exceptional digital experiences. Currently, I&apos;m focused on
-          building custom software solutions for clients at&nbsp;
+          building an experience of a lifetime for guests at&nbsp;
           <a
-            href="https://conciergesoftwaredesign.com/"
+            href="http://www.vailresorts.com/Corp/index.aspx"
             target="_blank"
             rel="noopener noreferrer"
             className={styles.job}
           >
-            Concierge Software Design.
+            Vail Resorts.
           </a>
         </p>
         <Link href="#contact">
