@@ -14,7 +14,7 @@ export default function Hero() {
         <h1 className={styles.largeHeader}>Justin Pilapil.</h1>
         <h1 className={styles.largeHeader}>I enjoy building dope @#$%.</h1>
         <p className={styles.bio}>
-          I&apos;m a software developer who enjoys creating and designing
+          I&apos;m a software engineer who enjoys creating and designing
           exceptional digital experiences. Currently, I&apos;m focused on
           building an experience of a lifetime for guests at&nbsp;
           <a
