@@ -8,7 +8,7 @@ module.exports = {
         "Lead Development/Coding on Projects - provide leadership, technical direction, and mentoring for the developers on the team.",
         "Monitor, support and troubleshoot Priority 1 issues with resort websites and mobile applications.",
         "Work closely with product team to ensure that project plans, stories, and estimates are accurate and ensure that features delivered meet requirements and are delivered on-time.",
-        "Maintain and implement new features for our 37 resort e-commerce platform using MVC .Net, React.JS, and Sitecore CMS.",
+        "Maintain and implement new features for our 37 resort e-commerce platform using MVC .Net, React, and Sitecore CMS.",
       ],
     },
     {
@@ -30,7 +30,6 @@ module.exports = {
         "Lead development sprints in an agile environment to meet bi-weekly goals.",
         "Established CI/CD pipeline for projects to automate build and test processes.",
         "Developed branch strategies for projects with GitHub and managed merge conflicts using Git",
-        "Implemented test driven development using Jest unit testing framework.",
       ],
     },
     {
