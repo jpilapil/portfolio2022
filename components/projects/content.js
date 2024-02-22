@@ -1,12 +1,18 @@
 module.exports = {
   projectList: [
     {
-      projectName: "Pepi Mafia",
-      desc: "A NFT (Non-Fungible Token) pixel art PFP collection built within the NFT Worlds ecosystem, a sandbox Metaverse platform.",
-      tech: ["React", "Sass", "Alchemy API", "Solidity", "Web3"],
-      src: "/project-images/pepi.png",
-      url: null,
-      comingSoon: true,
+      projectName: "jscrape",
+      desc: "A bot used to notify me when an item is in stock. The notification is set up to be sent to Discord or Slack",
+      tech: ["Javascript", "Node.js", "Discord API", "Slack API"],
+      src: "/project-images/jscrape.png",
+      url: "https://github.com/jpilapil/jscrape",
+      externals: [
+        {
+          name: "Github",
+          url: "https://github.com/jpilapil/jscrape",
+          src: "/icons/github.svg",
+        },
+      ],
     },
     {
       projectName: "CHROME kids",
