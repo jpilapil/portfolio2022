@@ -23,7 +23,7 @@ module.exports = {
       externals: [
         {
           name: "Website",
-          url: "https://chromekids.io/",
+          url: "https://opensea.io/collection/chrome-kids-official",
           src: "/icons/external.svg",
         },
         {
