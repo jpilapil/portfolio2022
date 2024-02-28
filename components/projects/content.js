@@ -19,7 +19,7 @@ module.exports = {
       desc: "A NFT (Non-Fungible Token) project on the Ethereum blockchain. Created with the intent of bringing artists and creatives together to create a community of like-minded people.",
       tech: ["Next.js", "Bulma", "Solidity", "AWS", "Web3"],
       src: "/project-images/chrome-kids.png",
-      url: "https://chromekids.io/",
+      url: "https://opensea.io/collection/chrome-kids-official",
       externals: [
         {
           name: "Website",
