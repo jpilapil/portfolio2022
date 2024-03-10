@@ -2,7 +2,7 @@ module.exports = {
   projectList: [
     {
       projectName: "jscrape",
-      desc: "A bot used to notify me when an item is in stock. The notification is set up to be sent to Discord or Slack",
+      desc: "A bot used to notify the user when an item is in stock, using the Discord and Slack API.",
       tech: ["Javascript", "Node.js", "Discord API", "Slack API"],
       src: "/project-images/jscrape.png",
       url: "https://github.com/jpilapil/jscrape",
