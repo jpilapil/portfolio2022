@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import styles from "./Navigation.module.scss";
-import { sections, logo } from "./content";
+import { sections, logo, resumeUrl } from "./content";
 
 // Need for bulma hamburger menu
 if (typeof window === "object") {
@@ -77,7 +77,7 @@ export default function Navigation() {
           ))}
           <div className="navbar-item">
             <a
-              href="https://docs.google.com/document/d/1zOHUtliiN_aSFt77tlWdOSXUn4geZNgqvrDezT7vPoA/edit?usp=sharing"
+              href={`${resumeUrl}`}
               className={`${styles.resume} button`}
               target="_blank"
               rel="noopener noreferrer"
