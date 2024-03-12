@@ -77,7 +77,7 @@ export default function Navigation() {
           ))}
           <div className="navbar-item">
             <a
-              href="https://docs.google.com/document/d/18R39a-n84GIXFGcOvysBccDm45usbMsevfbwTZyAoO4/edit?usp=sharing"
+              href="https://docs.google.com/document/d/1zOHUtliiN_aSFt77tlWdOSXUn4geZNgqvrDezT7vPoA/edit?usp=sharing"
               className={`${styles.resume} button`}
               target="_blank"
               rel="noopener noreferrer"
