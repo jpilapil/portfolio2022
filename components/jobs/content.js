@@ -5,10 +5,10 @@ module.exports = {
       company: "Vail Resorts",
       date: "September 2022 - Current",
       description: [
-        "Lead Development/Coding on Projects - provide leadership, technical direction, and mentoring for the developers on the team.",
-        "Monitor, support and troubleshoot Priority 1 issues with resort websites and mobile applications.",
-        "Work closely with product team to ensure that project plans, stories, and estimates are accurate and ensure that features delivered meet requirements and are delivered on-time.",
-        "Maintain and implement new features for our 37 resort e-commerce platform using MVC .Net, React, and Sitecore CMS.",
+        "Spearheaded project development initiatives by offering leadership, technical direction, and mentorship to empower team developers, resulting in streamlined processes and enhanced productivity.",
+        "Proactively monitored, supported, and resolved Priority 1 issues across resort websites and mobile applications, ensuring uninterrupted service and optimizing user experience.",
+        "Collaborated closely with product teams to validate project plans, stories, and estimates, ensuring accuracy and timely delivery of features that align with stakeholder requirements and organizational objectives.",
+        "Implemented and maintained innovative features on our 37-resort e-commerce platform using MVC .Net, React, and Sitecore CMS technologies, driving continuous improvement and elevating customer engagement.",
       ],
     },
     {
